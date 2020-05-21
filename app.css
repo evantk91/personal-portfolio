@@ -1,8 +1,62 @@
-/* * {
-    background-color: black;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-img {
-    width: 772px;
-    height: 512px;
+* {
+    background-color: black;
+}
+
+#nav-bar-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    background-color: orange;
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 16pt;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: orange;
+    width: 40%;
+}
+
+.nav-bar-member {
+    background-color: orange;
+}
+
+#name-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#name-header {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24pt;
+    color: white;
+}
+
+#title-header-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#title-header {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24pt;
+    color: white;
+}
+
+#front-page-photo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#front-page-photo {
+    width: 1158px;
+    height: 768px;
 }
