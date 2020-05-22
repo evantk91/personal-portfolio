@@ -12,6 +12,7 @@
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: 16pt;
+    margin: -10px  -20px 0 -20px;
 }
 
 #nav-bar {
@@ -20,10 +21,24 @@
     justify-content: space-evenly;
     background-color: orange;
     width: 40%;
+   
 }
 
 .nav-bar-member {
     background-color: orange;
+}
+
+#front-page-photo-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#front-page-photo {
+    width: 1158px;
+    height: 768px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
 }
 
 #name-header-container {
@@ -50,13 +65,3 @@
     color: white;
 }
 
-#front-page-photo-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-#front-page-photo {
-    width: 1158px;
-    height: 768px;
-}
