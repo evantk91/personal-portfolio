@@ -85,6 +85,11 @@
     
 }
 
+#about-me-title {
+    width: 400px;
+    margin-top: 40px;
+}
+
 .about-me-text {
     background-color: hsl(50, 100%, 80%);
     font-size: 18pt;
