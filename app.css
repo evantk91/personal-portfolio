@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: right;
-    background-color: orange;
+    background-color: hsl(25, 100%, 50%);
     color: white;
     font-family: 'Bebas Neue', cursive;
     font-size: 16pt;
@@ -19,13 +19,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    background-color: orange;
+    background-color: hsl(25, 100%, 50%);
     width: 40%;
    
 }
 
 .nav-bar-member {
-    background-color: orange;
+    background-color: hsl(25, 100%, 50%);
 }
 
 #front-page-photo-container {
@@ -38,7 +38,7 @@
     width: 1158px;
     height: 768px;
     margin-top: 50px;
-    margin-bottom: 50px; 
+    margin-bottom: 20px;
 }
 
 #name-header-container {
@@ -50,7 +50,7 @@
 #name-header {
     font-family: 'Bebas Neue', cursive;
     font-size: 24pt;
-    color: white;
+    color: yellow;
 }
 
 #title-header-container {
@@ -62,6 +62,31 @@
 #title-header {
     font-family: 'Bebas Neue', cursive;
     font-size: 24pt;
-    color: white;
+    color: yellow;
 }
 
+#about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: hsl(50, 100%, 80%);
+    margin: 0px  -20px;
+}
+
+#about-me-photo {
+    width: 373px;
+    height: 395px;
+    margin: 40px 0;
+}
+
+#about-me-text-container {
+    background-color: hsl(50, 100%, 80%);
+    width: 50%;
+    
+}
+
+.about-me-text {
+    background-color: hsl(50, 100%, 80%);
+    font-size: 18pt;
+    width: 100%;
+}
