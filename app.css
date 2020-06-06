@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
 
 * {
     background-color: black;
@@ -11,8 +12,8 @@
     background-color: hsl(25, 100%, 50%);
     color: white;
     font-family: 'Bebas Neue', cursive;
-    font-size: 16pt;
-    margin: -10px  -20px 0 -20px;
+    font-size: 1.5rem;
+    margin: -1rem  -1.5rem 0 -1.5rem;
 }
 
 #nav-bar {
@@ -20,8 +21,7 @@
     flex-direction: row;
     justify-content: space-evenly;
     background-color: hsl(25, 100%, 50%);
-    width: 40%;
-   
+    width: 40%; 
 }
 
 .nav-bar-member {
@@ -32,25 +32,30 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
 #front-page-photo {
-    width: 1158px;
-    height: 768px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    width: 80%;
+    height: auto;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+#front-page-photo-mobile {
+    display: none;
 }
 
 #name-header-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    width: 100%;
 }
 
-#name-header {
-    font-family: 'Bebas Neue', cursive;
-    font-size: 24pt;
-    color: yellow;
+#name-photo {
+    width: 60%;
+    height: auto;
 }
 
 #title-header-container {
@@ -61,8 +66,12 @@
 
 #title-header {
     font-family: 'Bebas Neue', cursive;
-    font-size: 24pt;
+    font-size: 2rem;
     color: yellow;
+}
+
+#title-header-mobile {
+    display: none;
 }
 
 #about-me-container {
@@ -70,23 +79,22 @@
     flex-direction: row;
     justify-content: space-evenly;
     background-color: hsl(50, 100%, 80%);
-    margin: 0px  -20px;
+    margin: 0  -1.5rem -15rem -1.5rem;
 }
 
 #about-me-photo {
-    width: 373px;
-    height: 395px;
-    margin: 40px 0;
+    width: 23rem;
+    height: 24rem;
+    margin: 2rem 0;
 }
 
 #about-me-text-container {
     background-color: hsl(50, 100%, 80%);
     width: 50%;
-    
 }
 
 #about-me-title {
-    width: 400px;
+    width: 25rem;
     margin-top: 40px;
 }
 
@@ -94,4 +102,158 @@
     background-color: hsl(50, 100%, 80%);
     font-size: 18pt;
     width: 100%;
+    font-family: 'Asap Condensed', sans-serif;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 900px) {
+    #about-me-container {
+        height: 30rem;
+    }
+
+    .about-me-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 600px) {
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        width: 100%; 
+    }
+
+    #title-header {
+        font-size: 1.5rem;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #about-me-title {
+        margin-top: 0;
+    }
+
+    #about-me-text-container {
+        width: 80%;
+    }
+
+    .about-me-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        width: 100%; 
+    }
+
+    #front-page-photo {
+        display: none;
+    }
+
+    #front-page-photo-mobile {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #name-photo {
+        width: 80%;
+    }
+
+    #title-header {
+        font-size: 1.2rem;
+    }
+    
+    #about-me-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #about-me-title {
+        margin-top: 0;
+        width: 20rem;
+    }
+
+    #about-me-text-container {
+        width: 80%;
+    }
+
+    .about-me-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #nav-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        font-size: 1rem;
+        width: 100%; 
+    }
+
+    #front-page-photo {
+        display: none;
+        width: 100%;
+    }
+
+    #front-page-photo-mobile {
+        display: block;
+        width: 80%;
+        height: auto;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    #name-photo {
+        width: 100%;
+    }
+
+    #title-header {
+        display: none;
+    }
+
+    #title-header-mobile {
+        display: block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 1.5rem;
+        color: yellow;
+    }
+
+    #about-me-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #about-me-title {
+        width: 20rem;
+        margin-top: 0;
+    }
+
+    #about-me-text-container {
+        width: 80%;
+    }
+
+    .about-me-text {
+        font-size: 1.2rem;
+    }
 }
