@@ -137,6 +137,16 @@
     background-color: hsl(50, 100%, 80%);
 }
 
+#resume-button {
+    background-color: black;
+    color: hsl(50, 100%, 80%);
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 36pt;
+    font-family: 'Asap Condensed', sans-serif;
+    border-radius: 10%;
+}
+
 #linkedin-link{
     color: black;
 }
@@ -155,19 +165,17 @@
     font-size: 6rem;
 }
 
-#resume-button {
-    background-color: black;
-    color: hsl(50, 100%, 80%);
-    padding: 1rem 1rem;
-    margin-bottom: 2rem;
-    font-size: 36pt;
-    font-family: 'Asap Condensed', sans-serif;
-    border-radius: 10%;
-}
 
-@media only screen and (max-width: 1200px) and (min-width: 900px) {
+
+@media only screen and (max-width: 1200px) and (min-width: 1000px) {
     #about-me-container {
-        height: 30rem;
+        height: 32rem;
+    }
+
+    #about-me-photo {
+        width: 24rem;
+        height: 24rem;
+        margin: 2rem 0;
     }
 
     .about-me-text {
@@ -175,7 +183,7 @@
     }
 }
 
-@media only screen and (max-width: 900px) and (min-width: 600px) {
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
     #nav-bar {
         display: flex;
         flex-direction: row;
@@ -193,6 +201,12 @@
         flex-direction: column;
         justify-content: space-evenly;
         align-items: center;
+    }
+
+    #about-me-photo {
+        width: 24rem;
+        height: 24rem;
+        margin: 2rem 0;
     }
 
     #about-me-title {
@@ -244,6 +258,12 @@
         align-items: center;
     }
 
+    #about-me-photo {
+        width: 24rem;
+        height: 24rem;
+        margin: 2rem 0;
+    }
+
     #about-me-title {
         margin-top: 0;
         width: 20rem;
@@ -256,15 +276,48 @@
     .about-me-text {
         font-size: 1.2rem;
     }
+
+    #linkedin-link i {
+        font-size: 4rem;
+    }
+
+    #github-link i {
+        font-size: 4rem;
+    }
+
+    #resume-button {
+        background-color: black;
+        color: hsl(50, 100%, 80%);
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 24pt;
+        font-family: 'Asap Condensed', sans-serif;
+        border-radius: 10%;
+    }
 }
 
 @media only screen and (max-width: 400px) {
-    #nav-bar {
+    #name-nav-container {
         display: flex;
         flex-direction: row;
+        justify-content: center;
+    }
+
+    #name-nav-photo {
+        width: 20rem;
+    }
+
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
         justify-content: space-evenly;
         font-size: 1rem;
         width: 100%; 
+    }
+
+    .nav-bar-member {
+        margin-top: 0;
+        margin-bottom: 1rem;
     }
 
     #front-page-photo {
@@ -302,6 +355,12 @@
         align-items: center;
     }
 
+    #about-me-photo {
+        width: 24rem;
+        height: 24rem;
+        margin: 2rem 0;
+    }
+
     #about-me-title {
         width: 20rem;
         margin-top: 0;
@@ -313,5 +372,23 @@
 
     .about-me-text {
         font-size: 1.2rem;
+    }
+
+    #linkedin-link i {
+        font-size: 3rem;
+    }
+
+    #github-link i {
+        font-size: 3rem;
+    }
+
+    #resume-button {
+        background-color: black;
+        color: hsl(50, 100%, 80%);
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 2rem;
+        font-size: 18pt;
+        font-family: 'Asap Condensed', sans-serif;
+        border-radius: 10%;
     }
 }
