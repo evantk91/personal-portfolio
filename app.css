@@ -7,7 +7,7 @@
 
 #nav-bar-container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     justify-content: right;
     background-color: hsl(25, 100%, 50%);
     color: white;
@@ -16,15 +16,27 @@
     margin: -1rem  -1.5rem 0 -1.5rem;
 }
 
+#name-nav-photo {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#name-nav-container {
+    width: 40%;
+    background-color: hsl(25, 100%, 50%);
+}
+
 #nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     background-color: hsl(25, 100%, 50%);
-    width: 40%; 
+    width: 100%; 
 }
 
-.nav-bar-member {
+.nav-bar-member {  
     background-color: hsl(25, 100%, 50%);
 }
 
@@ -82,9 +94,16 @@
     margin: 0  -1.5rem -15rem -1.5rem;
 }
 
+#about-me-photo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(50, 100%, 80%);
+}
+
 #about-me-photo {
-    width: 23rem;
-    height: 24rem;
+    width: 28rem;
+    height: 29rem;
     margin: 2rem 0;
 }
 
@@ -107,7 +126,46 @@
     text-align: justify;
 }
 
-@media only screen and (max-width: 1300px) and (min-width: 900px) {
+#resume-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: hsl(50, 100%, 80%);
+}
+
+#resume-button-container a {
+    background-color: hsl(50, 100%, 80%);
+}
+
+#linkedin-link{
+    color: black;
+}
+
+#linkedin-link i {
+    background-color: hsl(50, 100%, 80%);
+    font-size: 6rem;
+}
+
+#github-link{
+    color: black;
+}
+
+#github-link i {
+    background-color: hsl(50, 100%, 80%);
+    font-size: 6rem;
+}
+
+#resume-button {
+    background-color: black;
+    color: hsl(50, 100%, 80%);
+    padding: 1rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 36pt;
+    font-family: 'Asap Condensed', sans-serif;
+    border-radius: 10%;
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 900px) {
     #about-me-container {
         height: 30rem;
     }
