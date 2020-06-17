@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="./css/all.css"> 
     <link rel="icon" href="./photos/favicon.ico" type="image/x-con"/>
     <script src="app.js" defer></script>
     <title>Evan Greer's Portfolio</title>
@@ -11,10 +12,13 @@
 <html>
 <body>
     <main>
-        <section id="nav-bar-container">      
+        <section id="nav-bar-container">
             <nav id="nav-bar">
+                <section id="name-nav-container">
+                    <img id="name-nav-photo" src="./photos/name_nav.PNG" alt="name photo"> 
+                </section>
                 <h2 class="nav-bar-member">Projects</h2>
-                <h2 class="nav-bar-member">Resume</h2>
+                <h2 class="nav-bar-member">Blogs</h2>
                 <h2 class="nav-bar-member">Contact</h2>
             </nav>
         </section>
@@ -22,22 +26,32 @@
             <img id="front-page-photo" src="./photos/front_page_photo.JPG" alt="front page photo">
             <img id="front-page-photo-mobile" src="./photos/front_page_photo_mobile.JPG" alt="front page photo">
         </section>
-        <header id="name-header-container">
-            <img id="name-photo" src="./photos/name.PNG" alt="name photo">
-        </header>
         <header id="title-header-container">
             <h2 id="title-header">Full Stack Web Developer | Arts Enthusiast | Electronic Music Fan </h2>
             <h2 id="title-header-mobile">Full Stack Web Developer</h2>
         </header>
         <section id="about-me-container">
-            <img id="about-me-photo" src="./photos/about_me_photo.jpeg" alt="about me">
+            <div id="about-me-photo-container">
+                <img id="about-me-photo" src="./photos/about_me_photo.jpeg" alt="about me">
+            </div>
             <div id="about-me-text-container">
                 <img id="about-me-title" src="./photos/about_me.png" alt="about me">
                 <p class="about-me-text">Mechanical engineer turned ambitious full stack web developer located in Denver, Colorado. 
                 Through project experiences using Ruby on Rails, JavaScript, React, RESTful APIs, HTML, and CSS, I have developed a zeal 
                 for discovering new ways of connecting people, sharing ideas, and advancing culture through modern web development. I love the
                 intersection of creativity and analytical problem solving involved in creating applications. I am passionate about electronic 
-                music and am learning music production on Ableton in my free time.   </p>
+                music and am learning music production on Ableton in my free time. </p>
+                <div id="resume-button-container">
+                    <a id="linkedin-link" href="https://www.linkedin.com/in/evantkgreer/" target=_blank>
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a id="github-link" href="https://github.com/evantk91" target=_blank>
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="./Evan Greer - Resume.pdf" download="Evan Greer - Resume.pdf">
+                        <button id="resume-button">Resume</button>
+                    </a>     
+                </div>    
             </div>
         </section>
     </main>
