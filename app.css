@@ -147,6 +147,13 @@
     border-radius: 10%;
 }
 
+#blogs-title {
+    width: 20rem;
+    margin-left: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 #linkedin-link{
     color: black;
 }
@@ -165,9 +172,17 @@
     font-size: 6rem;
 }
 
-#footer-photo {
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#contact-photo {
     width: 10rem;
-    padding: 2rem 3rem;
+    padding: 2rem 2rem 2rem 5rem;
     background-color: hsl(25, 100%, 50%);
 }
 
@@ -179,11 +194,11 @@
     margin: 0  -1.5rem -10rem -1.5rem;
 }
 
-#footer-content {
+#contact-content {
     background-color: hsl(25, 100%, 50%);
 }
 
-#footer-content h1{
+#contact-content h1{
     color: white;
     padding: 1rem 0;
     margin-bottom: 0;
@@ -195,21 +210,50 @@
     margin-top: 0;
 }
 
-#footer-links-container {
+#contact-links-container {
+    background-color: hsl(25, 100%, 50%);
+    margin-right: 3rem;
+}
+
+.contact-link {
     background-color: hsl(25, 100%, 50%);
 }
 
-.footer-link {
-    background-color: hsl(25, 100%, 50%);
-}
-
-.footer-link i {
+.contact-link i {
     color: white;
     background-color: hsl(25, 100%, 50%);
     font-size: 3rem;
     padding-right: 2rem;
     padding-top: 1rem;
 }
+
+#footer-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#footer-nav-arrow {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    margin-top: 2rem;
+    font-size: 24pt;
+}
+
+#footer-nav-bar h1 {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 24pt;
+}
+
+/* #footer-nav-links {
+    margin-left: 3rem;
+} */
 
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
     #about-me-container {
