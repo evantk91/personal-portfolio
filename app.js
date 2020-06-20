@@ -7,7 +7,7 @@ const context = {
         },
         {
             title: "How to Unroll a Matrix: a Look into a Common Interview Question",
-            url: "https://medium.com/@etgreer91/how-to-unroll-a-matrix-a-look-into-a-common-interview-question-61684e270f0",
+            url: "https://medium.com/@etgreer91/how-to-unroll-a-matrix-a-look-into-a-common-interview-question-61684e270f03",
             photo_src: "./photos/unroll_a_matrix.jpeg"
         },
         {
@@ -20,10 +20,8 @@ const context = {
             url: "https://medium.com/@etgreer91/tackling-the-astronomical-my-first-hack-a-thon-experience-3d72243fbbee",
             photo_src: "./photos/astronomical_blog.jpeg"
         }
-
     ]
 }
-
 
 const source = document.getElementById("blogs-template").innerHTML
 const template = Handlebars.compile(source)
@@ -32,3 +30,6 @@ const compliedHTML = template(context)
 
 const blogsContainer = document.getElementById('blogs-container')
 blogsContainer.innerHTML = compliedHTML
+
+const blogTitle = document.querySelector("#blog-title");
+
