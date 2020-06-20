@@ -7,6 +7,14 @@
     <link rel="stylesheet" href="./css/all.css"> 
     <link rel="icon" href="./photos/favicon.ico" type="image/x-con"/>
     <script src="app.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="blogs-template" type="text/x-handlebars-template">
+        {{#each blogs}}
+        <div class="blog">
+            <img class="blog-photo" src={{this.photo_src}}>
+        </div>
+        {{/each}}
+    </script>
     <title>Evan Greer's Portfolio</title>
 </head>
 <html>
@@ -43,9 +51,12 @@
                 music and am learning music production on Ableton in my free time. </p> 
             </div>
         </section>
-        <section id="blogs-container">
+        <section id="blogs-section">
             <div id="blogs-title-container">
                <img id="blogs-title"  src="./photos/blogs_title.jpg" alt="blogs"> 
+            </div>
+            <div id="blogs-container">
+
             </div>
         </section>
         <section id="footer-container">
