@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="resume.css">
     <link rel="stylesheet" href="./css/all.css"> 
     <link rel="icon" href="./photos/favicon.ico" type="image/x-con"/>
-    <script src="app.js" defer></script>
     <title>Evan Greer's Portfolio</title>
 </head>
-<html>
 <body>
     <main>
         <section id="nav-bar-container">
@@ -22,31 +20,19 @@
                 <a class="nav-bar-member" href="./resume.html"><h2>Resume</h2></a>
             </nav>
         </section>
-        <section id="front-page-photo-container">
-            <img id="front-page-photo" src="./photos/front_page_photo.JPG" alt="evan greer posing sitting">
-            <img id="front-page-photo-mobile" src="./photos/front_page_photo_mobile.JPG" alt="evan greer posing sitting">
-        </section>
-        <header id="title-header-container">
-            <h2 id="title-header">Full Stack Web Developer | Arts Enthusiast | Electronic Music Fan </h2>
-            <h2 id="title-header-mobile">Full Stack Web Developer</h2>
-        </header>
-        <section id="about-me-container">
-            <div id="about-me-photo-container">
-                <img id="about-me-photo" src="./photos/about_me_photo.jpeg" alt="evan greer head shot">
+        <section id="resume-section">
+            <div id="resume-title-container">
+                <img id="resume-title-photo" src="./photos/resume_title.jpg" alt="resume title"> 
             </div>
-            <div id="about-me-text-container">
-                <img id="about-me-title" src="./photos/about_me.png" alt="about me">
-                <p class="about-me-text">Mechanical engineer turned ambitious full stack web developer located in Denver, Colorado. 
-                Through project experiences using Ruby on Rails, JavaScript, React, RESTful APIs, HTML, and CSS, I have developed a zeal 
-                for discovering new ways of connecting people, sharing ideas, and advancing culture through modern web development. I love the
-                intersection of creativity and analytical problem solving involved in creating applications. I am passionate about electronic 
-                music and am learning music production on Ableton in my free time. </p> 
+            <div id="resume-container">
+                <div id="resume-viewer">
+                    <iframe src="Evan Greer - Resume.pdf"></iframe>
+                    <button id="download-resume-button">Download Resume</button>
+                </div>
             </div>
-        </section>
-        <section id="blogs-container">
-            <div id="blogs-title-container">
-               <img id="blogs-title"  src="./photos/blogs_title.jpg" alt="blogs"> 
-            </div>
+            
+            
+
         </section>
         <section id="footer-container">
             <div id="footer-nav-bar">
@@ -73,6 +59,7 @@
                 </div> 
             </div>
         </section>
+
     </main>
 </body>
 </html>

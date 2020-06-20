@@ -6,25 +6,8 @@
 }
 
 #nav-bar-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    background-color: hsl(25, 100%, 50%);
-    color: white;
-    font-family: 'Bebas Neue', cursive;
     font-size: 1.5rem;
-    margin: -1rem  -1.5rem 0 -1.5rem;
-}
-
-#name-nav-photo {
-    width: 100%;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-}
-
-#name-nav-container {
-    width: 40%;
-    background-color: hsl(25, 100%, 50%);
+    margin: -1rem  -1.5rem 0 -1.5rem; 
 }
 
 #nav-bar {
@@ -36,7 +19,28 @@
     width: 100%; 
 }
 
+#name-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#name-nav-photo {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .nav-bar-member {  
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    background-color: hsl(25, 100%, 50%);
+    text-decoration: none;
+}
+
+.nav-bar-member h2 {  
     background-color: hsl(25, 100%, 50%);
 }
 
@@ -102,8 +106,8 @@
 }
 
 #about-me-photo {
-    width: 28rem;
-    height: 29rem;
+    width: 23rem;
+    height: 24rem;
     margin: 2rem 0;
 }
 
@@ -126,27 +130,6 @@
     text-align: justify;
 }
 
-#resume-button-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: hsl(50, 100%, 80%);
-}
-
-#resume-button-container a {
-    background-color: hsl(50, 100%, 80%);
-}
-
-#resume-button {
-    background-color: black;
-    color: hsl(50, 100%, 80%);
-    padding: 1rem 1rem;
-    margin-bottom: 2rem;
-    font-size: 36pt;
-    font-family: 'Asap Condensed', sans-serif;
-    border-radius: 10%;
-}
-
 #blogs-title {
     width: 20rem;
     margin-left: 3rem;
@@ -154,22 +137,35 @@
     margin-bottom: 1rem;
 }
 
-#linkedin-link{
-    color: black;
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(25, 100%, 50%);
+    margin: 0  -1.5rem -10rem -1.5rem;
 }
 
-#linkedin-link i {
-    background-color: hsl(50, 100%, 80%);
-    font-size: 6rem;
+#footer-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: hsl(25, 100%, 50%);
 }
 
-#github-link{
-    color: black;
+#footer-nav-arrow {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    margin-top: 2rem;
+    font-size: 24pt;
 }
 
-#github-link i {
-    background-color: hsl(50, 100%, 80%);
-    font-size: 6rem;
+#footer-nav-bar h1 {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 24pt;
 }
 
 #contact-info {
@@ -184,14 +180,6 @@
     width: 10rem;
     padding: 2rem 2rem 2rem 5rem;
     background-color: hsl(25, 100%, 50%);
-}
-
-#footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: hsl(25, 100%, 50%);
-    margin: 0  -1.5rem -10rem -1.5rem;
 }
 
 #contact-content {
@@ -226,34 +214,6 @@
     padding-right: 2rem;
     padding-top: 1rem;
 }
-
-#footer-nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-    background-color: hsl(25, 100%, 50%);
-}
-
-#footer-nav-arrow {
-    color: white;
-    background-color: hsl(25, 100%, 50%);
-    margin-top: 2rem;
-    font-size: 24pt;
-}
-
-#footer-nav-bar h1 {
-    color: white;
-    background-color: hsl(25, 100%, 50%);
-    margin-top: 2rem;
-    margin-left: 3rem;
-    font-family: 'Asap Condensed', sans-serif;
-    font-size: 24pt;
-}
-
-/* #footer-nav-links {
-    margin-left: 3rem;
-} */
 
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
     #about-me-container {

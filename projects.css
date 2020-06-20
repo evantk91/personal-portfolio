@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+
+* {
+    background-color: black;
+}
+
+#nav-bar-container {
+    font-size: 1.5rem;
+    margin: -1rem  -1.5rem 0 -1.5rem; 
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: hsl(25, 100%, 50%);
+    width: 100%; 
+}
+
+#name-nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#name-nav-photo {
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.nav-bar-member {  
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    background-color: hsl(25, 100%, 50%);
+    text-decoration: none;
+}
+
+.nav-bar-member h2 {  
+    background-color: hsl(25, 100%, 50%);
+}
+
+#projects-title-photo {
+    width: 30rem;
+    margin-left: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#footer-container {
+    display: flex;
+    flex-direction: row;
+    background-color: hsl(25, 100%, 50%);
+    margin: 0  -1.5rem -10rem -1.5rem;
+}
+
+#footer-nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#footer-nav-arrow {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    margin-top: 2rem;
+    font-size: 24pt;
+}
+
+#footer-nav-bar h1 {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    margin-top: 2rem;
+    margin-left: 3rem;
+    font-family: 'Asap Condensed', sans-serif;
+    font-size: 24pt;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 50%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#contact-photo {
+    width: 10rem;
+    padding: 2rem 2rem 2rem 5rem;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#contact-content {
+    background-color: hsl(25, 100%, 50%);
+}
+
+#contact-content h1{
+    color: white;
+    padding: 1rem 0;
+    margin-bottom: 0;
+    font-family: 'Asap Condensed', sans-serif;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#footer-email {
+    margin-top: 0;
+}
+
+#contact-links-container {
+    background-color: hsl(25, 100%, 50%);
+    margin-right: 3rem;
+}
+
+.contact-link {
+    background-color: hsl(25, 100%, 50%);
+}
+
+.contact-link i {
+    color: white;
+    background-color: hsl(25, 100%, 50%);
+    font-size: 3rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
