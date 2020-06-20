@@ -40,6 +40,10 @@
     text-decoration: none;
 }
 
+.nav-bar-member:hover {
+    color: black;
+}
+
 .nav-bar-member h2 {  
     background-color: hsl(25, 100%, 50%);
 }
@@ -205,7 +209,16 @@
     margin-top: 2rem;
     margin-left: 3rem;
     font-family: 'Asap Condensed', sans-serif;
-    font-size: 24pt;
+    font-size: 2rem;
+}
+
+.footer-link {
+    background-color: hsl(25, 100%, 50%);
+    text-decoration: none;
+    color: white;
+}
+.footer-link:hover {
+    font-size: 3rem;
 }
 
 #contact-info {
@@ -253,6 +266,10 @@
     font-size: 3rem;
     padding-right: 2rem;
     padding-top: 1rem;
+}
+
+.contact-link i:hover {
+    color: black;
 }
 
 @media only screen and (max-width: 1200px) and (min-width: 1000px) {
