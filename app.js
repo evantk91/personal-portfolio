@@ -30,6 +30,3 @@ const compliedHTML = template(context)
 
 const blogsContainer = document.getElementById('blogs-container')
 blogsContainer.innerHTML = compliedHTML
-
-const blogTitle = document.querySelector("#blog-title");
-
