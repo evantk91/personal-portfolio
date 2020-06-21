@@ -6,6 +6,29 @@
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="./css/all.css"> 
     <link rel="icon" href="./photos/favicon.ico" type="image/x-con"/>
+    <script src="./projects.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+    <script id="projects-template" type="text/x-handlebars-template">
+        {{#each projects}}
+        <div class="project">
+            <video class="project-video" controls>
+                <source src={{this.demo_url}} type="video/mp4">
+            </video>
+            <div class="project-info">
+                <h1 class="project-title">{{this.title}}</h1>
+                <p class="project-description">{{this.description}}</p>
+                {{#if this.deployed}}
+                <div>
+                    <a class="project-link" href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
+                    <a class="project-link" href={{this.deployed_url}} target=_blank><i class="fas fa-globe"></i></a>
+                </div>
+                {{else}}
+                   <a class="project-link" href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </script>
     <title>Evan Greer's Portfolio<</title>
 </head>
 <body>
@@ -23,6 +46,9 @@
         <section id="projects-section">
             <div id="projects-title-container">
                 <img id="projects-title-photo" src="./photos/projects_title.jpg" alt="resume"> 
+            </div>
+            <div id="projects-container">
+
             </div>
         </section>
         <section id="footer-container">
