@@ -100,15 +100,15 @@
     justify-content: space-evenly;
     border-color: hsl(50, 100%, 80%);
     border-style: solid;
-    width: 90%;
+    width: 80%;
     margin-bottom: 2rem;
     border-radius: 5%; 
 }
 
-.project-video {
+.project-photo {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 500px;
+    width: 25rem;
 }
 
 .project-title {
@@ -124,6 +124,11 @@
     font-family: 'Asap Condensed', sans-serif;
     font-size: 12pt;
     text-align: justify;
+}
+
+.tech-title {
+    color: white;
+    font-family: 'Asap Condensed', sans-serif;
 }
 
 .project-link i {
@@ -160,23 +165,6 @@
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 2rem;
-    animation: arrow 1s ease-out infinite alternate;
-}
-
-@keyframes arrow {
-    0% {
-        font-size: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 2rem;
-    }
-
-    100% {
-        font-size: 2.5rem;
-        margin-left: 1.75rem;
-        margin-right: 1.75rem;
-        margin-top: 1.75rem;
-    }
 }
 
 #footer-nav-bar h1 {
@@ -203,6 +191,10 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 50%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#contact-photo-container {
     background-color: hsl(25, 100%, 50%);
 }
 
@@ -252,7 +244,7 @@
     color: black;
 }
 
-@media only screen and (max-width: 1300px) and (min-width: 1100px) {
+@media only screen and (max-width: 1300px) and (min-width: 1150px) {
     #footer-navigate {
         display: none;
     }
@@ -266,10 +258,11 @@
     }
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 700px) {
+@media only screen and (max-width: 1150px) and (min-width: 700px) {
     #header {
         display: flex;
         flex-direction: column;
+
     }
 
     #nav-bar {
@@ -308,7 +301,7 @@
 
     .project {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         border-style: none;
     }
@@ -386,12 +379,12 @@
 
     .project {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
         border-style: none;
     }
 
-    .project-video {
+    .project-photo {
         width: 450px;
     }
 
@@ -490,8 +483,8 @@
         border-style: none;
     }
 
-    .project-video {
-        width: 350px;
+    .project-photo {
+        width: 300px;
     }
 
     .project-title {
@@ -500,7 +493,7 @@
 
     .project-description {
         color: white;
-        width: 350px;
+        width: 300px;
         font-family: 'Asap Condensed', sans-serif;
         font-size: 12pt;
         text-align: justify;
