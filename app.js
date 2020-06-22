@@ -30,3 +30,11 @@ const compliedHTML = template(context)
 
 const blogsContainer = document.getElementById('blogs-container')
 blogsContainer.innerHTML = compliedHTML
+
+// const aboutMeTitle = document.querySelector('#about-me-title')
+
+// window.addEventListener('scroll', animateAboutMe)
+
+// function animateAboutMe(event) {
+//     aboutMeTitle.style.animation = 'aboutme-slidein 2s ease-out';
+// }
