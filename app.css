@@ -6,7 +6,6 @@
 }
 
 #nav-bar-container {
-    font-size: 1.5rem;
     margin: -1rem  -1.5rem 0 -1.5rem; 
 }
 
@@ -31,17 +30,31 @@
     width: 100%;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    animation: slidein 2s ease-out;
+}
+
+@keyframes slidein {
+    0% {
+        margin-right: 100rem;
+    }
+
+    100% {
+        margin-right: 0rem;
+    }
 }
 
 .nav-bar-member {  
     color: white;
     font-family: 'Bebas Neue', cursive;
     background-color: hsl(25, 100%, 50%);
+    font-size: 1.5rem;
     text-decoration: none;
+    transition: all 0.5s ease-out;
 }
 
 .nav-bar-member:hover {
-    color: black;
+    color: hsl(50, 100%, 80%);
+    font-size: 1.75rem;
 }
 
 .nav-bar-member h2 {  
@@ -60,6 +73,7 @@
     height: auto;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    border-radius: 5%;
 }
 
 #front-page-photo-mobile {
@@ -113,6 +127,7 @@
     width: 23rem;
     height: 24rem;
     margin: 2rem 0;
+    border-radius: 5%;
 }
 
 #about-me-text-container {
@@ -166,6 +181,7 @@
     margin: 2rem;
     border-radius: 5%;
     z-index: 1;
+    transition: all 0.5s ease-out;
 }
 
 .blog-photo:hover {
@@ -200,7 +216,26 @@
     color: white;
     background-color: hsl(25, 100%, 50%);
     margin-top: 2rem;
-    font-size: 24pt;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    animation: arrow 1s ease-out infinite alternate;
+}
+
+@keyframes arrow {
+    0% {
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 2rem;
+    }
+
+    100% {
+        font-size: 2.5rem;
+        margin-left: 1.75rem;
+        margin-right: 1.75rem;
+        margin-top: 1.75rem;
+    }
 }
 
 #footer-nav-bar h1 {
@@ -212,11 +247,17 @@
     font-size: 2rem;
 }
 
+#footer-nav-links {
+    margin-left: 2rem;
+}
+
 .footer-link {
     background-color: hsl(25, 100%, 50%);
     text-decoration: none;
     color: white;
+    transition: all 0.5s ease-out;
 }
+
 .footer-link:hover {
     font-size: 3rem;
 }
@@ -266,6 +307,7 @@
     font-size: 3rem;
     padding-right: 2rem;
     padding-top: 1rem;
+    transition: all 0.5s ease-out;
 }
 
 .contact-link i:hover {
