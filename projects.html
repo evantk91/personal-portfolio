@@ -11,19 +11,26 @@
     <script id="projects-template" type="text/x-handlebars-template">
         {{#each projects}}
         <div class="project">
-            <video class="project-video" controls>
-                <source src={{this.demo_url}} type="video/mp4">
-            </video>
+            <img class="project-photo" src={{this.project_photo}} alt="">
             <div class="project-info">
                 <h1 class="project-title">{{this.title}}</h1>
                 <p class="project-description">{{this.description}}</p>
+                <h2 class="tech-title">Technology Stack:</h2>
+                <p class="project-description">Technology Stack: {{this.tech}}</p>
+                {{#if this.private}}
+                {{else}}
                 {{#if this.deployed}}
-                <div>
+                <div id="project-links-container">
                     <a class="project-link" href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
                     <a class="project-link" href={{this.deployed_url}} target=_blank><i class="fas fa-globe"></i></a>
+                    <a class="project-link" href={{this.demo_url}} target=_blank><i class="fab fa-youtube"></i></a>
                 </div>
                 {{else}}
-                   <a class="project-link" href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
+                <div id="project-links-container">
+                    <a class="project-link" href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
+                    <a class="project-link" href={{this.demo_url}} target=_blank><i class="fab fa-youtube"></i></a>
+                </div>
+                {{/if}}
                 {{/if}}
             </div>
         </div>

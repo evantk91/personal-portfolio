@@ -227,23 +227,6 @@
     margin-left: 2rem;
     margin-right: 2rem;
     font-size: 2rem;
-    animation: arrow 1s ease-out infinite alternate;
-}
-
-@keyframes arrow {
-    0% {
-        font-size: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-top: 2rem;
-    }
-
-    100% {
-        font-size: 2.5rem;
-        margin-left: 1.75rem;
-        margin-right: 1.75rem;
-        margin-top: 1.75rem;
-    }
 }
 
 #footer-nav-bar h1 {
@@ -565,13 +548,22 @@
         display: block;
         width: 80%;
         height: auto;
-        margin-top: 3rem;
+        margin-top: 1rem;
         margin-bottom: 1rem;
         border-radius: 5%;
     }
 
     #title-header {
-        font-size: 1.2rem;
+        display: none
+    }
+
+    #title-header-mobile {
+        display: block;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 2rem;
+        color: hsl(50, 100%, 80%);
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
     
     #about-me-container {
