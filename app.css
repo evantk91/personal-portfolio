@@ -5,11 +5,11 @@
     background-color: black;
 }
 
-#nav-bar-container {
+#header-container {
     margin: -1rem  -1.5rem 0 -1.5rem; 
 }
 
-#nav-bar {
+#header {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -27,7 +27,7 @@
 }
 
 #name-nav-photo {
-    width: 100%;
+    width: 30rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     animation: slidein 2s ease-out;
@@ -41,6 +41,14 @@
     100% {
         margin-right: 0rem;
     }
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: hsl(25, 100%, 50%);
+    width: 50%
 }
 
 .nav-bar-member {  
@@ -248,7 +256,7 @@
 }
 
 #footer-nav-links {
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .footer-link {
@@ -259,7 +267,7 @@
 }
 
 .footer-link:hover {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #contact-info {
@@ -267,6 +275,10 @@
     flex-direction: row;
     justify-content: flex-end;
     width: 50%;
+    background-color: hsl(25, 100%, 50%);
+}
+
+#contact-photo-container {
     background-color: hsl(25, 100%, 50%);
 }
 
@@ -293,6 +305,8 @@
 }
 
 #contact-links-container {
+    display: flex;
+    flex-direction: row;
     background-color: hsl(25, 100%, 50%);
     margin-right: 3rem;
 }
@@ -314,29 +328,43 @@
     color: black;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 1000px) {
-    #about-me-container {
-        height: 32rem;
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
-    #about-me-photo {
-        width: 24rem;
-        height: 24rem;
-        margin: 2rem 0;
+    .blog-title {
+        margin-top: 0;
     }
 
-    .about-me-text {
-        font-size: 1.2rem;
+    #footer-navigate {
+        display: none;
+    }
+
+    #footer-nav-arrow {
+        display: none;
     }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 600px) {
-    #nav-bar {
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    #header {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    #nav-bar {
         justify-content: space-evenly;
-        font-size: 1rem;
         width: 100%; 
+    }
+
+    #name-nav-container {
+        width: 60%;
+    }
+
+    #name-nav-photo {
+        margin-bottom: 0;
     }
 
     #title-header {
@@ -350,12 +378,6 @@
         align-items: center;
     }
 
-    #about-me-photo {
-        width: 24rem;
-        height: 24rem;
-        margin: 2rem 0;
-    }
-
     #about-me-title {
         margin-top: 0;
     }
@@ -364,18 +386,70 @@
         width: 80%;
     }
 
-    .about-me-text {
-        font-size: 1.2rem;
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
-}
 
-@media only screen and (max-width: 600px) and (min-width: 400px) {
-    #nav-bar {
+    .blog-title {
+        margin-top: 0;
+    }
+
+    #footer-navigate {
+        display: none;
+    }
+
+    #footer-nav-arrow {
+        display: none;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-nav-links {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        font-size: 1rem;
+        margin-left: 2rem;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 700px) and (min-width: 400px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+    }
+
+    #nav-bar {
+        justify-content: space-evenly;
         width: 100%; 
+    }
+
+    #name-nav-container {
+        width: 80%;
+    }
+
+    #name-nav-photo {
+        margin-bottom: 0;
+    }
+    
+    .nav-bar-member { 
+        font-size: 1rem;
+    }
+    
+    .nav-bar-member:hover {
+        font-size: 1.2rem;
     }
 
     #front-page-photo {
@@ -388,10 +462,7 @@
         height: auto;
         margin-top: 3rem;
         margin-bottom: 1rem;
-    }
-
-    #name-photo {
-        width: 80%;
+        border-radius: 5%;
     }
 
     #title-header {
@@ -405,12 +476,6 @@
         align-items: center;
     }
 
-    #about-me-photo {
-        width: 24rem;
-        height: 24rem;
-        margin: 2rem 0;
-    }
-
     #about-me-title {
         margin-top: 0;
         width: 20rem;
@@ -424,52 +489,76 @@
         font-size: 1.2rem;
     }
 
-    #linkedin-link i {
-        font-size: 4rem;
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-style: none;
     }
 
-    #github-link i {
-        font-size: 4rem;
+    .blog-title {
+        margin-top: 0;
     }
 
-    #resume-button {
-        background-color: black;
-        color: hsl(50, 100%, 80%);
-        padding: 0.5rem 0.5rem;
-        margin-bottom: 2rem;
-        font-size: 24pt;
-        font-family: 'Asap Condensed', sans-serif;
-        border-radius: 10%;
+    #footer-navigate {
+        display: none;
     }
-}
 
-@media only screen and (max-width: 400px) {
-    #name-nav-container {
+    #footer-nav-arrow {
+        display: none;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #contact-info {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
+}
 
-    #name-nav-photo {
-        width: 20rem;
+@media only screen and (max-width: 400px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
     }
 
     #nav-bar {
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
-        font-size: 1rem;
         width: 100%; 
     }
 
-    .nav-bar-member {
-        margin-top: 0;
-        margin-bottom: 1rem;
+    #name-nav-container {
+        width: 80%;
+    }
+
+    #name-nav-photo {
+        width: 20rem;
+        margin-bottom: 0;
+    }
+    
+    .nav-bar-member { 
+        font-size: 1rem;
+    }
+    
+    .nav-bar-member:hover {
+        font-size: 1.2rem;
     }
 
     #front-page-photo {
         display: none;
-        width: 100%;
     }
 
     #front-page-photo-mobile {
@@ -478,23 +567,13 @@
         height: auto;
         margin-top: 3rem;
         margin-bottom: 1rem;
-    }
-
-    #name-photo {
-        width: 100%;
+        border-radius: 5%;
     }
 
     #title-header {
-        display: none;
+        font-size: 1.2rem;
     }
-
-    #title-header-mobile {
-        display: block;
-        font-family: 'Bebas Neue', cursive;
-        font-size: 1.5rem;
-        color: yellow;
-    }
-
+    
     #about-me-container {
         display: flex;
         flex-direction: column;
@@ -502,15 +581,9 @@
         align-items: center;
     }
 
-    #about-me-photo {
-        width: 24rem;
-        height: 24rem;
-        margin: 2rem 0;
-    }
-
     #about-me-title {
-        width: 20rem;
         margin-top: 0;
+        width: 20rem;
     }
 
     #about-me-text-container {
@@ -521,21 +594,67 @@
         font-size: 1.2rem;
     }
 
-    #linkedin-link i {
-        font-size: 3rem;
+    .blog {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-style: none;
     }
 
-    #github-link i {
-        font-size: 3rem;
+    .blog-title {
+        margin-top: 0;
     }
 
-    #resume-button {
-        background-color: black;
-        color: hsl(50, 100%, 80%);
-        padding: 0.5rem 0.5rem;
+    #footer-navigate {
+        display: none;
+    }
+
+    #footer-nav-arrow {
+        display: none;
+    }
+
+    #footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #footer-nav-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #footer-nav-bar h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    #contact-photo-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background-color: hsl(25, 100%, 50%);
+    }
+
+    #contact-photo {
+        width: 15rem;
+        padding: 16px;
+    }
+
+    #contact-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-links-container {
+        width: 100%;
+        align-items: center;
+        margin-top: 0;
         margin-bottom: 2rem;
-        font-size: 18pt;
-        font-family: 'Asap Condensed', sans-serif;
-        border-radius: 10%;
+        margin-right: 0;
     }
 }
