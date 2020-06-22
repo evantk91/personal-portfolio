@@ -10,14 +10,16 @@
 </head>
 <body>
     <main>
-        <section id="nav-bar-container">
-            <nav id="nav-bar">
+        <section id="header-container">
+            <nav id="header">
                 <section id="name-nav-container">
                     <img id="name-nav-photo" src="./photos/name_nav.PNG" alt="evan greer"> 
                 </section>
-                <a class="nav-bar-member" href="./index.html"><h2>Home</h2></a>
-                <a class="nav-bar-member" href="./projects.html"><h2>Projects</h2></a>
-                <a class="nav-bar-member" href="./resume.html"><h2>Resume</h2></a>
+                <div id="nav-bar">
+                    <a class="nav-bar-member" href="./index.html"><h2>Home</h2></a>
+                    <a class="nav-bar-member" href="./projects.html"><h2>Projects</h2></a>
+                    <a class="nav-bar-member" href="./resume.html"><h2>Resume</h2></a>
+                </div>
             </nav>
         </section>
         <section id="resume-section">
@@ -27,6 +29,7 @@
             <div id="resume-container">
                 <div id="resume-viewer">
                     <iframe src="Evan Greer - Resume.pdf"></iframe>
+                    <img id="resume-screenshot" src="./photos/resume_screenshot.png">
                     <a href="./Evan Greer - Resume.pdf" download="Evan Greer - Resume.pdf">
                         <button id="download-resume-button">Download Resume</button>
                     </a>
@@ -35,7 +38,7 @@
         </section>
         <section id="footer-container">
             <div id="footer-nav-bar">
-                <h1>NAVIGATE</h1>
+                <h1 id="footer-navigate">NAVIGATE</h1>
                 <i id="footer-nav-arrow" class="fas fa-arrow-circle-right"></i>
                 <h1 id="footer-nav-links">
                     <a class="footer-link" href="./index.html">HOME</a>  \\  
