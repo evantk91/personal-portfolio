@@ -79,8 +79,8 @@
 }
 
 #front-page-photo {
-    width: 80%;
-    height: auto;
+    width: 70rem;
+    height: 50rem;
     margin-top: 3rem;
     margin-bottom: 1rem;
     border-radius: 5%;
@@ -374,6 +374,11 @@
         font-size: 1.5rem;
     }
 
+    #front-page-photo {
+        width: 45rem;
+        height: 35rem;
+    }
+
     #about-me-container {
         display: flex;
         flex-direction: column;
@@ -461,8 +466,8 @@
 
     #front-page-photo-mobile {
         display: block;
-        width: 80%;
-        height: auto;
+        width: 20rem;
+        height: 22rem;
         margin-top: 3rem;
         margin-bottom: 1rem;
         border-radius: 5%;
@@ -577,7 +582,7 @@
         display: block;
         width: 16rem;
         height: 17rem;
-        margin-top: 1rem;
+        margin-top: 2rem;
         margin-bottom: 1rem;
         border-radius: 5%;
     }
@@ -589,7 +594,7 @@
     #title-header-mobile {
         display: block;
         font-family: 'Bebas Neue', cursive;
-        font-size: 2rem;
+        font-size: 1.5rem;
         color: hsl(50, 100%, 80%);
         margin-top: 1rem;
         margin-bottom: 1rem;
