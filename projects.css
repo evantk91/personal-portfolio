@@ -16,6 +16,7 @@
     align-items: center;
     background-color: hsl(25, 100%, 50%);
     width: 100%; 
+    height: 12rem;
 }
 
 #name-nav-container {
@@ -200,8 +201,9 @@
 
 #contact-photo {
     width: 10rem;
-    padding: 2rem 2rem 2rem 5rem;
+    margin: 2rem 2rem 2rem 5rem;
     background-color: hsl(25, 100%, 50%);
+    border-radius: 5%;
 }
 
 #contact-content {
@@ -262,7 +264,7 @@
     #header {
         display: flex;
         flex-direction: column;
-
+        height: 12rem;
     }
 
     #nav-bar {
@@ -338,7 +340,7 @@
     #header {
         display: flex;
         flex-direction: column;
-        height: 10rem;
+        height: 12rem;
     }
 
     #nav-bar {
@@ -428,7 +430,7 @@
     #header {
         display: flex;
         flex-direction: column;
-        height: 10rem;
+        height: 12rem;
     }
 
     #nav-bar {
@@ -461,6 +463,7 @@
 
     #projects-title-photo {
         width: 20rem;
+        height: 4rem;
         margin-top: 2rem;
         margin-left: 0rem;
         animation: project-slidein 2s ease-out;
@@ -535,7 +538,8 @@
     #contact-photo {
         width: 16rem;
         height: 17rem;
-        padding: 16px;
+        margin: 16px;
+        border-radius: 5%;
     }
 
     #contact-info {
