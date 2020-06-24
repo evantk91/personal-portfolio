@@ -143,6 +143,13 @@
     width: 50%;
 }
 
+#about-me-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: hsl(50, 100%, 80%);
+}
+
 #about-me-title {
     width: 25rem;
     margin-top: 40px;
@@ -155,6 +162,12 @@
     font-family: 'Asap Condensed', sans-serif;
     line-height: 1.5;
     text-align: justify;
+}
+
+#blogs-title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
 }
 
 #blogs-title {
@@ -459,6 +472,10 @@
         align-items: center;
     }
 
+    #about-me-title-container {
+        justify-content: center;
+    }
+
     #about-me-title {
         margin-top: 0;
         width: 20rem;
@@ -470,6 +487,10 @@
 
     .about-me-text {
         font-size: 1.2rem;
+    }
+
+    #blogs-title-container {
+        justify-content: center;
     }
 
     .blog {
@@ -546,8 +567,8 @@
 
     #front-page-photo-mobile {
         display: block;
-        width: 80%;
-        height: auto;
+        width: 16rem;
+        height: 17rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
         border-radius: 5%;
@@ -573,9 +594,20 @@
         align-items: center;
     }
 
+    #about-me-title-container {
+        justify-content: center;
+    }
+
     #about-me-title {
         margin-top: 0;
-        width: 20rem;
+        width: 15rem;
+    }
+
+    #about-me-photo {
+        width: 16rem;
+        height: 17rem;
+        margin: 2rem 0;
+        border-radius: 5%;
     }
 
     #about-me-text-container {
@@ -584,6 +616,15 @@
 
     .about-me-text {
         font-size: 1.2rem;
+    }
+
+    #blogs-title-container {
+        justify-content: center;
+    }
+
+    #blogs-title {
+        width: 15rem;
+        margin-left: 0;
     }
 
     .blog {
@@ -595,6 +636,16 @@
 
     .blog-title {
         margin-top: 0;
+        width: 18rem;
+    }
+
+    .blog-photo {
+        width: 18rem;
+        height: 18rem;
+        margin: 2rem;
+        border-radius: 5%;
+        z-index: 1;
+        transition: all 0.5s ease-out;
     }
 
     #footer-navigate {
@@ -631,7 +682,8 @@
     }
 
     #contact-photo {
-        width: 15rem;
+        width: 16rem;
+        height: 17rem;
         padding: 16px;
     }
 
