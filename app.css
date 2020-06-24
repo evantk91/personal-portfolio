@@ -543,7 +543,7 @@
     #header {
         display: flex;
         flex-direction: column;
-        height: 12rem;
+        height: 10rem;
     }
 
     #nav-bar {
@@ -633,7 +633,7 @@
 
     #blogs-title {
         width: 15rem;
-        height: 3rem;
+        height: 4rem;
         margin-left: 0;
     }
 

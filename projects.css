@@ -430,7 +430,7 @@
     #header {
         display: flex;
         flex-direction: column;
-        height: 12rem;
+        height: 10rem;
     }
 
     #nav-bar {
@@ -443,7 +443,8 @@
     }
 
     #name-nav-photo {
-        width: 20rem;
+        width: 18rem;
+        height: 3rem;
         margin-bottom: 0;
     }
     
