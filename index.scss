@@ -603,6 +603,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
              justify-content: center;
              img {
                 width: 20rem;
+                height: 4rem;
                 margin-top: 0;
              }    
           }
@@ -616,6 +617,8 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
        #blogs-title {
           justify-content: center;
           img {
+             width: 20rem;
+             height: 4rem; 
              margin-left: 0;
           }
        }
@@ -645,9 +648,9 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
            }
 
            #footer-nav-links {
-              font-size: 1.2rem;
+              font-size: 1rem;
               a:hover {
-                 font-size: 1.5rem;
+                 font-size: 1.2rem;
               }
            }  
         }
@@ -661,7 +664,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
                justify-content: center;
                img {
                   width: 15rem;
-                  heigth: 15rem;
+                  height: 15rem;
                   margin: 0;
                   margin-top: 2rem;
                }
