@@ -528,6 +528,7 @@
   }
   #about-me #about-me-text #about-me-title img {
     width: 20rem;
+    height: 4rem;
     margin-top: 0;
   }
   #about-me #about-me-text p {
@@ -538,6 +539,8 @@
     justify-content: center;
   }
   #blogs-section #blogs-title img {
+    width: 20rem;
+    height: 4rem;
     margin-left: 0;
   }
   #blogs-section #blogs-container .blog {
@@ -563,10 +566,10 @@
     display: none;
   }
   #footer .nav-bar #footer-nav-links {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   #footer .nav-bar #footer-nav-links a:hover {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   #footer #contact {
     display: flex;
@@ -580,7 +583,7 @@
   }
   #footer #contact #contact-photo img {
     width: 15rem;
-    heigth: 15rem;
+    height: 15rem;
     margin: 0;
     margin-top: 2rem;
   }
