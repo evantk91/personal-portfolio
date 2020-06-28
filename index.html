@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./css/all.css"> 
     <link rel="icon" href="./photos/favicon.ico" type="image/x-con"/>
     <script src="app.js" defer></script>
@@ -21,35 +21,33 @@
 <html>
 <body>
     <main>
-        <section id="header-container">
-            <nav id="header">
-                <section id="name-nav-container">
-                    <img id="name-nav-photo" src="./photos/name_nav.jpg" alt="evan greer"> 
-                </section>
-                <div id="nav-bar">
-                    <a class="nav-bar-member" href="./index.html"><h2>Home</h2></a>
-                    <a class="nav-bar-member" href="./projects.html"><h2>Projects</h2></a>
-                    <a class="nav-bar-member" href="./resume.html"><h2>Resume</h2></a>
-                </div>
-            </nav>
-        </section>
-        <section id="front-page-photo-container">
-            <img id="front-page-photo" src="./photos/front_page_photo.JPG" alt="evan greer posing sitting">
-            <img id="front-page-photo-mobile" src="./photos/front_page_photo_mobile.JPG" alt="evan greer posing sitting">
-        </section>
-        <header id="title-header-container">
-            <h2 id="title-header">Full Stack Web Developer | Arts Enthusiast | Electronic Music Fan </h2>
-            <h2 id="title-header-mobile">Full Stack Web Developer</h2>
-        </header>
-        <section id="about-me-container">
-            <div id="about-me-photo-container">
-                <img id="about-me-photo" src="./photos/about_me_photo.jpeg" alt="evan greer head shot">
+        <section id="header">
+            <section id="header-name">
+                <img src="./photos/name_nav.jpg" alt="evan greer"> 
+            </section>
+            <div class="nav-bar">
+                <a href="./index.html"><h2>Home</h2></a>
+                <a href="./projects.html"><h2>Projects</h2></a>
+                <a href="./resume.html"><h2>Resume</h2></a>
             </div>
-            <div id="about-me-text-container">
-                <div id="about-me-title-container">
-                    <img id="about-me-title" src="./photos/about_me.png" alt="about me">
+        </section>
+        <section id="front-page-photo">
+            <img src="./photos/front_page_photo.JPG" alt="evan greer posing sitting">
+            <img class="mobile" src="./photos/front_page_photo_mobile.JPG" alt="evan greer posing sitting">
+        </section>
+        <header id="title-header">
+            <h2>Full Stack Web Developer | Arts Enthusiast | Electronic Music Fan </h2>
+            <h2 class="mobile">Full Stack Web Developer</h2>
+        </header>
+        <section id="about-me">
+            <div id="about-me-photo">
+                <img src="./photos/about_me_photo.jpeg" alt="evan greer head shot">
+            </div>
+            <div id="about-me-text">
+                <div id="about-me-title">
+                    <img src="./photos/about_me.png" alt="about me">
                 </div>
-                <p class="about-me-text">Mechanical engineer turned ambitious full stack web developer located in Denver, Colorado. 
+                <p>Mechanical engineer turned ambitious full stack web developer located in Denver, Colorado. 
                 Through project experiences using Ruby on Rails, JavaScript, React, RESTful APIs, HTML, and CSS, I have developed a zeal 
                 for discovering new ways of connecting people, sharing ideas, and advancing culture through modern web development. I love the
                 intersection of creativity and analytical problem solving involved in creating applications. I am passionate about electronic 
@@ -57,41 +55,37 @@
             </div>
         </section>
         <section id="blogs-section">
-            <div id="blogs-title-container">
-               <img id="blogs-title"  src="./photos/blogs_title.jpg" alt="blogs"> 
+            <div id="blogs-title">
+               <img src="./photos/blogs_title.jpg" alt="blogs"> 
             </div>
             <div id="blogs-container">
-
-            </div>
-            <div id="blog-title-container">
-                <h1 id="blog-title"></h1>
             </div>
         </section>
-        <section id="footer-container">
-            <div id="footer-nav-bar">
-                <h1 id="footer-navigate">NAVIGATE</h1>
+        <section id="footer">
+            <div class="nav-bar">
+                <h1>NAVIGATE</h1>
                 <i id="footer-nav-arrow" class="fas fa-arrow-circle-right"></i>
                 <h1 id="footer-nav-links">
-                    <a class="footer-link" href="./index.html">HOME</a>  \\  
-                    <a class="footer-link" href="./projects.html">PROJECTS</a> \\ 
-                    <a class="footer-link" href="./resume.html">RESUME</a>
+                    <a href="./index.html">HOME</a>  \\  
+                    <a href="./projects.html">PROJECTS</a> \\ 
+                    <a href="./resume.html">RESUME</a>
                 </h1>
             </div>
-            <div id="contact-info">
-                <div id="contact-photo-container">
-                    <img id="contact-photo" src="./photos/footer_photo.JPG" alt="lucky cat logo">
+            <div id="contact">
+                <div id="contact-photo">
+                    <img src="./photos/footer_photo.JPG" alt="lucky cat logo">
                 </div>
-                <div id="contact-content">
+                <div id="contact-info">
                     <h1>Connect With Me</h1>
                     <h1 id="footer-email">evantk91@gmail.com</h1>
-                    <div id="contact-links-container">
-                        <a class="contact-link" href="https://www.linkedin.com/in/evantkgreer/" target=_blank>
+                    <div id="contact-links">
+                        <a href="https://www.linkedin.com/in/evantkgreer/" target=_blank>
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a class="contact-link" href="https://github.com/evantk91" target=_blank>
+                        <a href="https://github.com/evantk91" target=_blank>
                             <i class="fab fa-github"></i>
                         </a>
-                        <a class="contact-link" href="https://medium.com/@etgreer91" target=_blank>
+                        <a href="https://medium.com/@etgreer91" target=_blank>
                             <i class="fab fa-medium"></i>
                         </a>
                     </div>

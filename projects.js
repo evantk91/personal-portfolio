@@ -1,6 +1,13 @@
 const context = {
     projects: [
         {
+            title: "Greer Bonsai Marketplace",
+            description: "Ecommerce site to buy plants!",
+            tech: "React, Express, Knex",
+            project_photo: "./photos/bonsai-marketplace.jpg",
+            private: true
+        },
+        {
             title: "Maripilot Website",
             description: "Full stack web application for the Maripilot Company. The user interface allows for users to use a business planning tool and a messaging board to connect with other users. The user interface is built in React and the backend is written in Ruby on Rails. The user information and messages are stored in a PostgreSQL relational database. JWT authentication is used for user login. An administration login is created for the moderation and management of the messaging board.",
             tech: "React, Ruby on Rails",
