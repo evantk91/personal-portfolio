@@ -1,0 +1,592 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap");
+* {
+  background-color: black;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ff6a00;
+  width: 105%;
+  height: 10rem;
+  margin: -1rem -1.5rem 0 -1.5rem;
+}
+#header #header-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 40%;
+  background-color: #ff6a00;
+}
+#header #header-name img {
+  width: 30rem;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  animation: slidein 2s ease-out;
+}
+#header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ff6a00;
+  width: 50%;
+}
+#header .nav-bar a {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  background-color: #ff6a00;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+#header .nav-bar a h2 {
+  background-color: #ff6a00;
+}
+#header .nav-bar a:hover {
+  color: #ffee99;
+  font-size: 1.75rem;
+}
+
+@keyframes slidein {
+  0% {
+    margin-right: 100rem;
+  }
+  100% {
+    margin-right: 0rem;
+  }
+}
+#front-page-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+#front-page-photo img {
+  width: 70rem;
+  height: 50rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 5%;
+}
+#front-page-photo .mobile {
+  display: none;
+  width: 20rem;
+  height: 22rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  border-radius: 5%;
+}
+
+#title-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#title-header h2 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
+  color: #ffee99;
+}
+#title-header .mobile {
+  display: none;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5rem;
+  color: #ffee99;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+#about-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #ffee99;
+  margin: 0 -1.5rem 0 -1.5rem;
+}
+#about-me #about-me-photo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffee99;
+}
+#about-me #about-me-photo img {
+  width: 23rem;
+  height: 24rem;
+  margin: 2rem 0;
+  border-radius: 5%;
+}
+#about-me #about-me-text {
+  background-color: #ffee99;
+  width: 50%;
+}
+#about-me #about-me-text #about-me-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #ffee99;
+}
+#about-me #about-me-text #about-me-title img {
+  width: 25rem;
+  margin-top: 40px;
+}
+#about-me #about-me-text p {
+  background-color: #ffee99;
+  font-size: 18pt;
+  width: 100%;
+  font-family: "Asap Condensed", sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+#blogs-section #blogs-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#blogs-section #blogs-title img {
+  width: 20rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#blogs-section #blogs-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#blogs-section #blogs-container .blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-color: #ffee99;
+  border-style: solid;
+  width: 60%;
+  margin-bottom: 2rem;
+  border-radius: 5%;
+}
+#blogs-section #blogs-container .blog .blog-photo {
+  width: 20rem;
+  height: 20rem;
+  margin: 2rem;
+  border-radius: 5%;
+  transition: all 0.5s ease-out;
+}
+#blogs-section #blogs-container .blog .blog-photo:hover {
+  width: 22rem;
+  height: 22rem;
+  margin: 1rem;
+}
+#blogs-section #blogs-container .blog .blog-title {
+  color: white;
+  width: 20rem;
+  font-size: 24pt;
+  font-family: "Asap Condensed", sans-serif;
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ff6a00;
+  margin: 0 -1.5rem -10rem -1.5rem;
+}
+#footer .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  background-color: #ff6a00;
+}
+#footer .nav-bar h1 {
+  color: white;
+  background-color: #ff6a00;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2rem;
+}
+#footer .nav-bar i {
+  color: white;
+  background-color: #ff6a00;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
+}
+#footer .nav-bar #footer-nav-links {
+  margin-left: 1rem;
+}
+#footer .nav-bar #footer-nav-links a {
+  background-color: #ff6a00;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-out;
+}
+#footer .nav-bar #footer-nav-links a:hover {
+  font-size: 2.5rem;
+}
+#footer #contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+  background-color: #ff6a00;
+}
+#footer #contact #contact-photo {
+  background-color: #ff6a00;
+}
+#footer #contact #contact-photo img {
+  width: 10rem;
+  margin: 2rem 2rem 2rem 5rem;
+  background-color: #ff6a00;
+  border-radius: 5%;
+}
+#footer #contact #contact-info {
+  background-color: #ff6a00;
+}
+#footer #contact #contact-info h1 {
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  font-family: "Asap Condensed", sans-serif;
+  background-color: #ff6a00;
+}
+#footer #contact #contact-info #footer-email {
+  margin-top: 0;
+}
+#footer #contact #contact-info #contact-links {
+  display: flex;
+  flex-direction: row;
+  background-color: #ff6a00;
+  margin-right: 3rem;
+}
+#footer #contact #contact-info #contact-links a {
+  background-color: #ff6a00;
+}
+#footer #contact #contact-info #contact-links a i {
+  color: white;
+  background-color: #ff6a00;
+  font-size: 3rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  transition: all 0.5s ease-out;
+}
+#footer #contact #contact-info #contact-links a i:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 1300px) and (min-width: 1000px) {
+  #blogs-section #blogs-container .blog {
+    border-style: none;
+  }
+
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+  }
+  #header #header-name {
+    width: 60%;
+  }
+  #header #header-name img {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #header .nav-bar {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #header .nav-bar a {
+    font-size: 1.2rem;
+  }
+  #header .nav-bar a:hover {
+    font-size: 1.5rem;
+  }
+
+  #front-page-photo img {
+    width: 48rem;
+    height: 35rem;
+  }
+
+  #title-header h2 {
+    font-size: 1.5rem;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #about-me #about-me-text {
+    width: 80%;
+  }
+  #about-me #about-me-text #about-me-title {
+    justify-content: center;
+  }
+  #about-me #about-me-text #about-me-title img {
+    margin-top: 0;
+  }
+
+  #blogs-section #blogs-title {
+    justify-content: center;
+  }
+  #blogs-section #blogs-title img {
+    margin-left: 0;
+  }
+  #blogs-section #blogs-container .blog {
+    border-style: none;
+    flex-direction: column;
+  }
+  #blogs-section #blogs-container .blog .blog-title {
+    margin-top: 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+  #footer #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 700px) and (min-width: 400px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    width: 115%;
+  }
+  #header #header-name {
+    width: 60%;
+  }
+  #header #header-name img {
+    width: 25rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #header .nav-bar {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #header .nav-bar a {
+    font-size: 1.2rem;
+  }
+  #header .nav-bar a:hover {
+    font-size: 1.5rem;
+  }
+
+  #front-page-photo img {
+    display: none;
+  }
+  #front-page-photo .mobile {
+    display: block;
+  }
+
+  #title-header h2 {
+    font-size: 1.2rem;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #about-me #about-me-text {
+    width: 80%;
+  }
+  #about-me #about-me-text #about-me-title {
+    justify-content: center;
+  }
+  #about-me #about-me-text #about-me-title img {
+    margin-top: 0;
+  }
+
+  #blogs-section #blogs-title {
+    justify-content: center;
+  }
+  #blogs-section #blogs-title img {
+    margin-left: 0;
+  }
+  #blogs-section #blogs-container .blog {
+    border-style: none;
+    flex-direction: column;
+  }
+  #blogs-section #blogs-container .blog .blog-title {
+    margin-top: 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .nav-bar {
+    width: 60%;
+  }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+  #footer .nav-bar #footer-nav-links {
+    font-size: 1.5rem;
+  }
+  #footer .nav-bar #footer-nav-links a:hover {
+    font-size: 2rem;
+  }
+  #footer #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    width: 115%;
+  }
+  #header #header-name {
+    width: 60%;
+  }
+  #header #header-name img {
+    width: 20rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #header .nav-bar {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #header .nav-bar a {
+    font-size: 1rem;
+  }
+  #header .nav-bar a:hover {
+    font-size: 1.2rem;
+  }
+
+  #front-page-photo img {
+    display: none;
+  }
+  #front-page-photo .mobile {
+    display: block;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 5%;
+  }
+
+  #title-header h2 {
+    display: none;
+  }
+  #title-header .mobile {
+    display: block;
+  }
+
+  #about-me {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  #about-me #about-me-photo img {
+    width: 18rem;
+    height: 18rem;
+  }
+  #about-me #about-me-text {
+    width: 80%;
+  }
+  #about-me #about-me-text #about-me-title {
+    justify-content: center;
+  }
+  #about-me #about-me-text #about-me-title img {
+    width: 20rem;
+    margin-top: 0;
+  }
+  #about-me #about-me-text p {
+    font-size: 15pt;
+  }
+
+  #blogs-section #blogs-title {
+    justify-content: center;
+  }
+  #blogs-section #blogs-title img {
+    margin-left: 0;
+  }
+  #blogs-section #blogs-container .blog {
+    border-style: none;
+    flex-direction: column;
+  }
+  #blogs-section #blogs-container .blog .blog-title {
+    margin-top: 0;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .nav-bar {
+    width: 60%;
+  }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+  #footer .nav-bar #footer-nav-links {
+    font-size: 1.2rem;
+  }
+  #footer .nav-bar #footer-nav-links a:hover {
+    font-size: 1.5rem;
+  }
+  #footer #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #footer #contact #contact-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #footer #contact #contact-photo img {
+    width: 15rem;
+    heigth: 15rem;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  #footer #contact #contact-links {
+    margin-bottom: 3rem;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
