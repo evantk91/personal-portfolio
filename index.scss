@@ -147,6 +147,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
          background-color: $theme-color;
          img {
             width: 25rem;
+            height: 4rem;
             margin-top: 40px;
          }
       }
@@ -169,6 +170,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
       justify-content: flex-start;
       img {
          width: 20rem;
+         height: 4rem;
          margin-left: 6rem;
          margin-top: 1rem;
          margin-bottom: 1rem;
@@ -361,8 +363,8 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
 
     #front-page-photo {
        img {
-          width: 48rem;
-          height: 35rem;
+          width: 40rem;
+          height: 30rem;
        }
     }
 
@@ -411,6 +413,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
         justify-content: center;
         align-items: center;
         .nav-bar {
+           width: 80%; 
            h1:first-child {
               display: none;
            }
@@ -603,7 +606,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
              justify-content: center;
              img {
                 width: 20rem;
-                height: 4rem;
+                height: 5rem;
                 margin-top: 0;
              }    
           }
@@ -618,7 +621,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
           justify-content: center;
           img {
              width: 20rem;
-             height: 4rem; 
+             height: 5rem; 
              margin-left: 0;
           }
        }
@@ -638,7 +641,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
         justify-content: center;
         align-items: center;
         .nav-bar {
-           width: 60%;
+           width: 80%;
            h1:first-child {
               display: none;
            }
@@ -648,9 +651,9 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
            }
 
            #footer-nav-links {
-              font-size: 1rem;
+              font-size: 1.2rem;
               a:hover {
-                 font-size: 1.2rem;
+                 font-size: 1.5rem;
               }
            }  
         }
@@ -664,7 +667,7 @@ $header-margin: -1rem  -1.5rem 0 -1.5rem;
                justify-content: center;
                img {
                   width: 15rem;
-                  height: 15rem;
+                  height: 16rem;
                   margin: 0;
                   margin-top: 2rem;
                }

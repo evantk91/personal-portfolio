@@ -131,6 +131,7 @@
 }
 #about-me #about-me-text #about-me-title img {
   width: 25rem;
+  height: 4rem;
   margin-top: 40px;
 }
 #about-me #about-me-text p {
@@ -149,6 +150,7 @@
 }
 #blogs-section #blogs-title img {
   width: 20rem;
+  height: 4rem;
   margin-left: 6rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -317,8 +319,8 @@
   }
 
   #front-page-photo img {
-    width: 48rem;
-    height: 35rem;
+    width: 40rem;
+    height: 30rem;
   }
 
   #title-header h2 {
@@ -359,6 +361,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  #footer .nav-bar {
+    width: 80%;
   }
   #footer .nav-bar h1:first-child {
     display: none;
@@ -528,7 +533,7 @@
   }
   #about-me #about-me-text #about-me-title img {
     width: 20rem;
-    height: 4rem;
+    height: 5rem;
     margin-top: 0;
   }
   #about-me #about-me-text p {
@@ -540,7 +545,7 @@
   }
   #blogs-section #blogs-title img {
     width: 20rem;
-    height: 4rem;
+    height: 5rem;
     margin-left: 0;
   }
   #blogs-section #blogs-container .blog {
@@ -557,7 +562,7 @@
     align-items: center;
   }
   #footer .nav-bar {
-    width: 60%;
+    width: 80%;
   }
   #footer .nav-bar h1:first-child {
     display: none;
@@ -566,10 +571,10 @@
     display: none;
   }
   #footer .nav-bar #footer-nav-links {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   #footer .nav-bar #footer-nav-links a:hover {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   #footer #contact {
     display: flex;
@@ -583,7 +588,7 @@
   }
   #footer #contact #contact-photo img {
     width: 15rem;
-    height: 15rem;
+    height: 16rem;
     margin: 0;
     margin-top: 2rem;
   }
