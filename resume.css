@@ -1,557 +1,464 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap");
 * {
-    background-color: black;
-}
-
-#header-container {
-    font-size: 1.5rem;
-    margin: -1rem  -1.5rem 0 -1.5rem; 
+  background-color: black;
 }
 
 #header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: hsl(25, 100%, 50%);
-    width: 100%;
-    height: 12rem; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #ff6a00;
+  height: 10rem;
+  margin: -1rem -1.5rem 0 -1.5rem;
+}
+#header #header-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 40%;
+  background-color: #ff6a00;
+}
+#header #header-name img {
+  width: 30rem;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  animation: slidein 2s ease-out;
+}
+#header .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #ff6a00;
+  width: 50%;
+}
+#header .nav-bar a {
+  color: white;
+  font-family: "Bebas Neue", cursive;
+  background-color: #ff6a00;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all 0.5s ease-out;
+}
+#header .nav-bar a h2 {
+  background-color: #ff6a00;
+}
+#header .nav-bar a:hover {
+  color: #ffee99;
+  font-size: 1.75rem;
 }
 
-#name-nav-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 40%;
-    background-color: hsl(25, 100%, 50%);
+#resume-section #resume-title img {
+  width: 22rem;
+  height: 5rem;
+  margin-left: 6rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  animation: resume-slidein 2s ease-out;
 }
-
-#name-nav-photo {
-    width: 30rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    animation: slidein 2s ease-out;
+#resume-section #resume-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-@keyframes slidein {
-    0% {
-        margin-right: 100rem;
-    }
-
-    100% {
-        margin-right: 0rem;
-    }
+#resume-section #resume-container #resume-viewer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: #ffee99;
+  border-radius: 5%;
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  width: 65%;
 }
-
-#nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: hsl(25, 100%, 50%);
-    width: 50%
+#resume-section #resume-container #resume-viewer iframe {
+  width: 45rem;
+  height: 40rem;
+  align-self: center;
+  margin-top: 3rem;
 }
-
-.nav-bar-member {  
-    color: white;
-    font-family: 'Bebas Neue', cursive;
-    background-color: hsl(25, 100%, 50%);
-    font-size: 1.5rem;
-    text-decoration: none;
-    transition: all 0.5s ease-out;
+#resume-section #resume-container #resume-viewer img {
+  display: none;
 }
-
-.nav-bar-member:hover {
-    color: hsl(50, 100%, 80%);
-    font-size: 1.75rem;
+#resume-section #resume-container #resume-viewer button {
+  background-color: #ffee99;
+  font-size: 18pt;
+  font-family: "Asap Condensed", sans-serif;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10%;
+  width: 12rem;
+  margin: 2rem;
+  transition: all 0.5s ease-out;
 }
-
-.nav-bar-member h2 {  
-    background-color: hsl(25, 100%, 50%);
-}
-
-#resume-title-photo {
-    width: 22rem;
-    margin-left: 6rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    animation: resume-slidein 2s ease-out;
+#resume-section #resume-container #resume-viewer button:hover {
+  cursor: pointer;
+  font-size: 20pt;
+  width: 14rem;
 }
 
 @keyframes resume-slidein {
-    0% {
-        margin-left: -20rem;
-    }
-
-    100% {
-        margin-left: 6rem;
-    }
+  0% {
+    margin-left: -20rem;
+  }
+  100% {
+    margin-left: 6rem;
+  }
 }
-
-#resume-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+#footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #ff6a00;
+  margin: 0 -1.5rem -15rem -1.5rem;
 }
-
-#resume-viewer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-style: solid;
-    border-color:  hsl(50, 100%, 80%);
-    border-radius: 5%;
-    margin-top: 2rem;
-    margin-bottom: 5rem;
-    width: 65%
+#footer .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+  background-color: #ff6a00;
 }
-
-#resume-viewer iframe {
-    width: 45rem;
-    height: 40rem;
-    align-self: center;
-    margin-top: 3rem;
+#footer .nav-bar h1 {
+  color: white;
+  background-color: #ff6a00;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  font-family: "Asap Condensed", sans-serif;
+  font-size: 2rem;
 }
-
-#resume-screenshot {
-    display: none
+#footer .nav-bar i {
+  color: white;
+  background-color: #ff6a00;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  font-size: 2rem;
 }
-
-#download-resume-button {
-    background-color: hsl(50, 100%, 80%);
-    font-size: 18pt;
-    font-family: 'Asap Condensed', sans-serif;
-    padding: 0.5rem 0.5rem;
-    border-radius: 10%;
-    width: 12rem;
-    margin: 2rem;
-    transition: all 0.5s ease-out;
+#footer .nav-bar #footer-nav-links {
+  margin-left: 1rem;
 }
-
-#download-resume-button:hover {
-    cursor: pointer;
-    font-size: 20pt;
-    width: 14rem;
+#footer .nav-bar #footer-nav-links a {
+  background-color: #ff6a00;
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-out;
 }
-
-#footer-container {
-    display: flex;
-    flex-direction: row;
-    background-color: hsl(25, 100%, 50%);
-    margin: 0  -1.5rem -10rem -1.5rem;
+#footer .nav-bar #footer-nav-links a:hover {
+  font-size: 2.5rem;
 }
-
-#footer-nav-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 50%;
-    background-color: hsl(25, 100%, 50%);
+#footer #contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 50%;
+  background-color: #ff6a00;
 }
-
-#footer-nav-arrow {
-    color: white;
-    background-color: hsl(25, 100%, 50%);
-    margin-top: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    font-size: 2rem;
+#footer #contact #contact-photo {
+  background-color: #ff6a00;
 }
-
-#footer-nav-bar h1 {
-    color: white;
-    background-color: hsl(25, 100%, 50%);
-    margin-top: 2rem;
-    margin-left: 3rem;
-    font-family: 'Asap Condensed', sans-serif;
-    font-size: 2rem;
+#footer #contact #contact-photo img {
+  width: 10rem;
+  margin: 2rem 2rem 2rem 5rem;
+  background-color: #ff6a00;
+  border-radius: 5%;
 }
-
-.footer-link {
-    background-color: hsl(25, 100%, 50%);
-    text-decoration: none;
-    color: white;
-    transition: all 0.5s ease-out;
+#footer #contact #contact-info {
+  background-color: #ff6a00;
 }
-.footer-link:hover {
-    font-size: 3rem;
+#footer #contact #contact-info h1 {
+  color: white;
+  padding: 1rem 0;
+  margin-bottom: 0;
+  font-family: "Asap Condensed", sans-serif;
+  background-color: #ff6a00;
 }
-
-#contact-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 50%;
-    background-color: hsl(25, 100%, 50%);
+#footer #contact #contact-info #footer-email {
+  margin-top: 0;
 }
-
-#contact-photo {
-    width: 10rem;
-    margin: 2rem 2rem 2rem 5rem;
-    background-color: hsl(25, 100%, 50%);
-    border-radius: 5%;
+#footer #contact #contact-info #contact-links {
+  display: flex;
+  flex-direction: row;
+  background-color: #ff6a00;
+  margin-right: 3rem;
 }
-
-#contact-content {
-    background-color: hsl(25, 100%, 50%);
+#footer #contact #contact-info #contact-links a {
+  background-color: #ff6a00;
 }
-
-#contact-content h1{
-    color: white;
-    padding: 1rem 0;
-    margin-bottom: 0;
-    font-family: 'Asap Condensed', sans-serif;
-    background-color: hsl(25, 100%, 50%);
+#footer #contact #contact-info #contact-links a i {
+  color: white;
+  background-color: #ff6a00;
+  font-size: 3rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  transition: all 0.5s ease-out;
 }
-
-#footer-email {
-    margin-top: 0;
-}
-
-#contact-links-container {
-    display: flex;
-    flex-direction: row;
-    background-color: hsl(25, 100%, 50%);
-    margin-right: 3rem;
-}
-
-.contact-link {
-    background-color: hsl(25, 100%, 50%);
-}
-
-.contact-link i {
-    color: white;
-    background-color: hsl(25, 100%, 50%);
-    font-size: 3rem;
-    padding-right: 2rem;
-    padding-top: 1rem;
-    transition: all 0.5s ease-out;
-}
-
-.contact-link i:hover {
-    color: black;
+#footer #contact #contact-info #contact-links a i:hover {
+  color: black;
 }
 
 @media only screen and (max-width: 1300px) and (min-width: 1000px) {
-    #header {
-        height: 12rem; 
-    }
+  #resume-section #resume-container #resume-viewer {
+    border-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #resume-section #resume-container #resume-viewer iframe {
+    margin-top: 1rem;
+  }
 
-    #footer-navigate {
-        display: none;
-    }
-
-    #footer-nav-arrow {
-        display: none;
-    }
-
-    #resume-viewer {
-        border-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    #resume-screenshot {
-        display: none
-    }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
 }
-
 @media only screen and (max-width: 1000px) and (min-width: 700px) {
-    #header {
-        display: flex;
-        flex-direction: column;
-        height: 12rem
-    }
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+  }
+  #header #header-name {
+    width: 60%;
+  }
+  #header #header-name img {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #header .nav-bar {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #header .nav-bar a {
+    font-size: 1.2rem;
+  }
+  #header .nav-bar a:hover {
+    font-size: 1.5rem;
+  }
 
-    #nav-bar {
-        justify-content: space-evenly;
-        width: 100%; 
-    }
+  #resume-section #resume-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #resume-section #resume-title img {
+    margin-left: 0;
+    animation: resume-slidein 2s ease-out;
+  }
+  #resume-section #resume-container #resume-viewer {
+    border-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #resume-section #resume-container #resume-viewer iframe {
+    margin-top: 1rem;
+  }
 
-    #name-nav-container {
-        width: 60%;
+  @keyframes resume-slidein {
+    0% {
+      margin-left: -60rem;
     }
-
-    #name-nav-photo {
-        margin-top: 1rem;
-        margin-bottom: 0;
+    100% {
+      margin-left: 0rem;
     }
-
-    #resume-title-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #resume-title-photo {
-        margin-left: 0;
-        animation: resume-slidein 2s ease-out;
-    }
-
-    @keyframes resume-slidein {
-        0% {
-            margin-left: -60rem;
-        }
-
-        100% {
-            margin-left: 0rem;
-        }
-    }
-
-    #resume-viewer {
-       border-style: none;
-       margin-top: 0;
-       margin-bottom: 0;
-    }
-
-    #resume-screenshot {
-        display: none
-    }
-
-    #resume-screenshot {
-        display: none
-    }
-
-    #footer-navigate {
-        display: none;
-    }
-
-    #footer-nav-arrow {
-        display: none;
-    }
-
-    #footer-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #footer-nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin-left: 2rem;
-        margin-bottom: 0;
-    }
-
-    #contact-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  }
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .nav-bar {
+    width: 80%;
+  }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+  #footer #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-
 @media only screen and (max-width: 700px) and (min-width: 400px) {
-    #header {
-        display: flex;
-        flex-direction: column;
-        height: 12rem; 
-    }
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    width: 115%;
+  }
+  #header #header-name {
+    width: 60%;
+  }
+  #header #header-name img {
+    width: 25rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #header .nav-bar {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #header .nav-bar a {
+    font-size: 1.2rem;
+  }
+  #header .nav-bar a:hover {
+    font-size: 1.5rem;
+  }
 
-    #nav-bar {
-        justify-content: space-evenly;
-        width: 100%; 
-    }
+  #resume-section #resume-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #resume-section #resume-title img {
+    margin-left: 0;
+    animation: resume-slidein 2s ease-out;
+  }
+  #resume-section #resume-container #resume-viewer {
+    border-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #resume-section #resume-container #resume-viewer iframe {
+    display: none;
+  }
+  #resume-section #resume-container #resume-viewer img {
+    display: block;
+    width: 25rem;
+  }
 
-    #name-nav-container {
-        width: 80%;
-    }
-
-    #name-nav-photo {
-        margin-top: 4rem;
-        margin-bottom: 0;
-    }
-
-    #resume-title-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #resume-title-photo {
-        margin-left: 0;
-        margin-top: 4rem;
-        animation: resume-slidein 2s ease-out;
-    }
-
-    @keyframes resume-slidein {
-        0% {
-            margin-left: -60rem;
-        }
-
-        100% {
-            margin-left: 0rem;
-        }
-    }
-
-    #resume-viewer {
-        border-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    #resume-viewer iframe {
-        display: none
-    }
-
-    #resume-screenshot {
-        display: block;
-        width: 30rem
-    }
-
-    #footer-navigate {
-        display: none;
-    }
-
-    #footer-nav-arrow {
-        display: none;
-    }
-
-    #footer-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #footer-nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-
-    #contact-info {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .nav-bar {
+    width: 60%;
+  }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+  #footer .nav-bar #footer-nav-links {
+    font-size: 1.5rem;
+  }
+  #footer .nav-bar #footer-nav-links a:hover {
+    font-size: 2rem;
+  }
+  #footer #contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
-
 @media only screen and (max-width: 400px) {
-    #header {
-        display: flex;
-        flex-direction: column;
-        height: 10rem; 
-    }
+  #header {
+    display: flex;
+    flex-direction: column;
+    height: 12rem;
+    width: 115%;
+  }
+  #header #header-name {
+    width: 60%;
+  }
+  #header #header-name img {
+    width: 20rem;
+    height: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  #header .nav-bar {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  #header .nav-bar a {
+    font-size: 1rem;
+  }
+  #header .nav-bar a:hover {
+    font-size: 1.2rem;
+  }
 
-    #nav-bar {
-        justify-content: space-evenly;
-        width: 100%; 
-    }
+  #resume-section #resume-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #resume-section #resume-title img {
+    width: 15rem;
+    height: 4rem;
+    margin-left: 0;
+    animation: resume-slidein 2s ease-out;
+  }
+  #resume-section #resume-container #resume-viewer {
+    border-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  #resume-section #resume-container #resume-viewer iframe {
+    display: none;
+  }
+  #resume-section #resume-container #resume-viewer img {
+    display: block;
+    width: 18rem;
+  }
 
-    #name-nav-container {
-        width: 80%;
+  @keyframes project-slidein {
+    0% {
+      margin-left: -20rem;
     }
-
-    #name-nav-photo {
-        width: 18rem;
-        height: 3rem;
-        margin-bottom: 0;
+    100% {
+      margin-left: 0rem;
     }
-    
-    .nav-bar-member { 
-        font-size: 1rem;
-    }
-    
-    .nav-bar-member:hover {
-        font-size: 1.2rem;
-    }
-
-    #resume-title-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    #resume-title-photo {
-        width: 15rem;
-        height: 4rem;
-        margin-left: 0;
-        margin-top: 1rem;
-        animation: resume-slidein 2s ease-out;
-    }
-
-    @keyframes resume-slidein {
-        0% {
-            margin-left: -60rem;
-        }
-
-        100% {
-            margin-left: 0rem;
-        }
-    }
-
-    #resume-viewer {
-        border-style: none;
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    #resume-viewer iframe {
-        display: none
-    }
-
-    #resume-screenshot {
-        display: block;
-        width: 18rem
-    }
-
-    #footer-navigate {
-        display: none;
-    }
-
-    #footer-nav-arrow {
-        display: none;
-    }
-
-    #footer-container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #footer-nav-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin-left: 0;
-    }
-
-    #footer-nav-bar h1 {
-        font-size: 1.5rem;
-        margin-left: 0;
-    }
-
-    #contact-photo-container {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        background-color: hsl(25, 100%, 50%);
-    }
-
-    #contact-photo {
-        width: 16rem;
-        height: 17rem;
-        margin: 16px;
-        border-radius: 5%;
-    }
-
-    #contact-info {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #contact-links-container {
-        width: 100%;
-        align-items: center;
-        margin-top: 0;
-        margin-bottom: 2rem;
-        margin-right: 0;
-    }
+  }
+  #footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #footer .nav-bar {
+    width: 80%;
+  }
+  #footer .nav-bar h1:first-child {
+    display: none;
+  }
+  #footer .nav-bar i {
+    display: none;
+  }
+  #footer .nav-bar #footer-nav-links {
+    font-size: 1.2rem;
+  }
+  #footer .nav-bar #footer-nav-links a:hover {
+    font-size: 1.5rem;
+  }
+  #footer #contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #footer #contact #contact-photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #footer #contact #contact-photo img {
+    width: 15rem;
+    height: 16rem;
+    margin: 0;
+    margin-top: 2rem;
+  }
+  #footer #contact #contact-links {
+    margin-bottom: 3rem;
+  }
 }
 
+/*# sourceMappingURL=resume.css.map */

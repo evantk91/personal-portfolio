@@ -10,7 +10,6 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #ff6a00;
-  width: 105%;
   height: 10rem;
   margin: -1rem -1.5rem 0 -1.5rem;
 }
@@ -131,7 +130,7 @@
 }
 #about-me #about-me-text #about-me-title img {
   width: 25rem;
-  height: 4rem;
+  height: 5rem;
   margin-top: 40px;
 }
 #about-me #about-me-text p {
@@ -150,7 +149,7 @@
 }
 #blogs-section #blogs-title img {
   width: 20rem;
-  height: 4rem;
+  height: 5rem;
   margin-left: 6rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -195,7 +194,7 @@
   display: flex;
   flex-direction: row;
   background-color: #ff6a00;
-  margin: 0 -1.5rem -10rem -1.5rem;
+  margin: 0 -1.5rem -15rem -1.5rem;
 }
 #footer .nav-bar {
   display: flex;

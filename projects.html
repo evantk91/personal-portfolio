@@ -11,19 +11,19 @@
     <script id="projects-template" type="text/x-handlebars-template">
         {{#each projects}}
         <div class="project">
-            <img class="project-photo" src={{this.project_photo}} alt="">
+            <img src={{this.project_photo}} alt="">
             <div class="project-info">
-                <h1 class="project-title">{{this.title}}</h1>
-                <p class="project-description">{{this.description}}</p>
-                <h2 class="tech-title">Technology Stack:</h2>
-                <p class="project-description">Technology Stack: {{this.tech}}</p>
+                <h1>{{this.title}}</h1>
+                <p>{{this.description}}</p>
+                <h2>Technology Stack:</h2>
+                <p>Technology Stack: {{this.tech}}</p>
                 {{#if this.private}}
                 {{else}}
                 {{#if this.deployed}}
-                <div id="project-links-container">
-                    <a class="project-link" href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
-                    <a class="project-link" href={{this.deployed_url}} target=_blank><i class="fas fa-globe"></i></a>
-                    <a class="project-link" href={{this.demo_url}} target=_blank><i class="fab fa-youtube"></i></a>
+                <div id="project-links">
+                    <a href={{this.github_url}} target=_blank><i class="fab fa-github"></i></a>
+                    <a href={{this.deployed_url}} target=_blank><i class="fas fa-globe"></i></a>
+                    <a href={{this.demo_url}} target=_blank><i class="fab fa-youtube"></i></a>
                 </div>
                 {{else}}
                 <div id="project-links-container">
@@ -40,58 +40,54 @@
 </head>
 <body>
     <main>
-        <section id="header-container">
-            <nav id="header">
-                <section id="name-nav-container">
-                    <img id="name-nav-photo" src="./photos/name_nav.jpg" alt="evan greer"> 
-                </section>
-                <div id="nav-bar">
-                    <a class="nav-bar-member" href="./index.html"><h2>Home</h2></a>
-                    <a class="nav-bar-member" href="./projects.html"><h2>Projects</h2></a>
-                    <a class="nav-bar-member" href="./resume.html"><h2>Resume</h2></a>
-                </div>
-            </nav>
+        <section id="header">
+            <section id="header-name">
+                <img src="./photos/name_nav.jpg" alt="evan greer"> 
+            </section>
+            <div class="nav-bar">
+                <a href="./index.html"><h2>Home</h2></a>
+                <a href="./projects.html"><h2>Projects</h2></a>
+                <a href="./resume.html"><h2>Resume</h2></a>
+            </div>
         </section>
         <section id="projects-section">
-            <div id="projects-title-container">
-                <img id="projects-title-photo" src="./photos/projects_title.jpg" alt="resume"> 
+            <div id="projects-title">
+                <img src="./photos/projects_title.jpg" alt="resume"> 
             </div>
             <div id="projects-container">
-
             </div>
         </section>
-        <section id="footer-container">
-            <div id="footer-nav-bar">
-                <h1 id="footer-navigate">NAVIGATE</h1>
+        <section id="footer">
+            <div class="nav-bar">
+                <h1>NAVIGATE</h1>
                 <i id="footer-nav-arrow" class="fas fa-arrow-circle-right"></i>
                 <h1 id="footer-nav-links">
-                    <a class="footer-link" href="./index.html">HOME</a>  \\  
-                    <a class="footer-link" href="./projects.html">PROJECTS</a> \\ 
-                    <a class="footer-link" href="./resume.html">RESUME</a>
+                    <a href="./index.html">HOME</a>  \\  
+                    <a href="./projects.html">PROJECTS</a> \\ 
+                    <a href="./resume.html">RESUME</a>
                 </h1>
             </div>
-            <div id="contact-info">
-                <div id="contact-photo-container">
-                    <img id="contact-photo" src="./photos/footer_photo.JPG" alt="lucky cat logo">
+            <div id="contact">
+                <div id="contact-photo">
+                    <img src="./photos/footer_photo.JPG" alt="lucky cat logo">
                 </div>
-                <div id="contact-content">
+                <div id="contact-info">
                     <h1>Connect With Me</h1>
                     <h1 id="footer-email">evantk91@gmail.com</h1>
-                    <div id="contact-links-container">
-                        <a class="contact-link" href="https://www.linkedin.com/in/evantkgreer/" target=_blank>
+                    <div id="contact-links">
+                        <a href="https://www.linkedin.com/in/evantkgreer/" target=_blank>
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a class="contact-link" href="https://github.com/evantk91" target=_blank>
+                        <a href="https://github.com/evantk91" target=_blank>
                             <i class="fab fa-github"></i>
                         </a>
-                        <a class="contact-link" href="https://medium.com/@etgreer91" target=_blank>
+                        <a href="https://medium.com/@etgreer91" target=_blank>
                             <i class="fab fa-medium"></i>
                         </a>
                     </div>
                 </div> 
             </div>
         </section>
-
     </main>
 </body>
 </html>
