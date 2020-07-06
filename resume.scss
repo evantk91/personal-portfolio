@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed&display=swap');
+
+$header_footer_color: hsl(25, 100%, 50%);
+$theme_color: hsl(50, 100%, 80%);
+$header_height: 10rem;
+$header-margin: -1rem  -1.5rem 0 -1.5rem;
+
+* {
+    background-color: black;
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $header_footer_color;
+    height: $header_height;
+    margin: $header-margin;
+ 
+    #header-name {
+       display: flex;
+       flex-direction: row;
+       justify-content: center;
+       width: 40%;
+       background-color: $header_footer_color;
+       img {
+          width: 30rem;
+          height: 5rem;
+          margin: {
+             top: 1rem;
+             bottom: 1rem;
+          }
+          animation: slidein 2s ease-out;
+       }
+    }
+ 
+    .nav-bar {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-around;
+       background-color: $header_footer_color;
+       width: 50%;
+       a {  
+          color: white;
+          font-family: 'Bebas Neue', cursive;
+          background-color: $header_footer_color;
+          font-size: 1.5rem;
+          text-decoration: none;
+          transition: all 0.5s ease-out;
+          h2 {
+             background-color: $header_footer_color;
+          }
+       }
+ 
+       a:hover {
+          color: $theme_color;
+          font-size: 1.75rem;
+       }
+    }
+}
+
+#resume-section {
+   #resume-title {
+      img {
+         width: 22rem;
+         height: 5rem;
+         margin-left: 6rem;
+         margin-top: 1rem;
+         margin-bottom: 1rem;
+         animation: resume-slidein 2s ease-out;
+      }
+   }
+
+   #resume-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      #resume-viewer {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         border-style: solid;
+         border-color:  $theme_color;
+         border-radius: 5%;
+         margin-top: 2rem;
+         margin-bottom: 5rem;
+         width: 65%;
+         iframe {
+            width: 45rem;
+            height: 40rem;
+            align-self: center;
+            margin-top: 3rem;
+         }
+
+         img {
+            display: none
+         }
+
+         button {
+            background-color: $theme_color;
+            font-size: 18pt;
+            font-family: 'Asap Condensed', sans-serif;
+            padding: 0.5rem 0.5rem;
+            border-radius: 10%;
+            width: 12rem;
+            margin: 2rem;
+            transition: all 0.5s ease-out;
+         }
+
+         button:hover {
+            cursor: pointer;
+            font-size: 20pt;
+            width: 14rem;
+         }
+      }
+   }
+}
+
+@keyframes resume-slidein {
+    0% {
+        margin-left: -20rem;
+    }
+
+    100% {
+        margin-left: 6rem;
+    }
+}
+
+#footer {
+    display: flex;
+    flex-direction: row;
+    background-color: $header_footer_color;
+    margin: 0  -1.5rem -15rem -1.5rem;
+    .nav-bar {
+       display: flex;
+       flex-direction: row;
+       justify-content: space-evenly;
+       width: 50%;
+       background-color: $header_footer_color;
+       h1 {
+          color: white;
+          background-color: $header_footer_color;
+          margin-top: 2rem;
+          margin-left: 3rem;
+          font-family: 'Asap Condensed', sans-serif;
+          font-size: 2rem;
+       }
+ 
+       i {
+          color: white;
+          background-color: $header_footer_color;
+          margin-top: 2rem;
+          margin-left: 2rem;
+          margin-right: 2rem;
+          font-size: 2rem;
+       }
+ 
+       #footer-nav-links {
+          margin-left: 1rem;
+          a {
+             background-color: $header_footer_color;
+             text-decoration: none;
+             color: white;
+             transition: all 0.5s ease-out;
+          }
+ 
+          a:hover {
+             font-size: 2.5rem;
+          }
+       }    
+    }
+ 
+    #contact {
+       display: flex;
+       flex-direction: row;
+       justify-content: flex-end;
+       width: 50%;
+       background-color: $header_footer_color;
+       #contact-photo {
+          background-color: $header_footer_color;
+          img {
+             width: 10rem;
+             margin: 2rem 2rem 2rem 5rem;
+             background-color: $header_footer_color;
+             border-radius: 5%;
+          }
+       }
+ 
+       #contact-info {
+          background-color: $header_footer_color;
+          h1 {
+             color: white;
+             padding: 1rem 0;
+             margin-bottom: 0;
+             font-family: 'Asap Condensed', sans-serif;
+             background-color: $header_footer_color;
+          }
+ 
+          #footer-email {
+             margin-top: 0;
+          }
+ 
+          #contact-links {
+             display: flex;
+             flex-direction: row;
+             background-color: $header_footer_color;
+             margin-right: 3rem;
+             a {
+                background-color: $header_footer_color;
+                i {
+                   color: white;
+                   background-color: $header_footer_color;
+                   font-size: 3rem;
+                   padding-right: 2rem;
+                   padding-top: 1rem;
+                   transition: all 0.5s ease-out;
+                }
+ 
+                i:hover {
+                   color: black;
+                }
+             }
+          }
+       }
+    }
+ }
+
+ @media only screen and (max-width: 1300px) and (min-width: 1000px) {
+    #resume-section{
+       #resume-container {
+          #resume-viewer {
+             border-style: none;
+             margin-top: 0;
+             margin-bottom: 0;
+             iframe {
+                margin-top: 1rem;
+              }
+          }
+       }
+    }
+ 
+    #footer {
+       .nav-bar {
+          h1:first-child {
+             display: none;
+          }
+ 
+          i {
+             display: none;
+          }
+       }    
+    }
+ }
+
+ @media only screen and (max-width: 1000px) and (min-width: 700px) {
+    #header {
+       display: flex;
+       flex-direction: column;
+       height: 12rem;
+       #header-name {
+          width: 60%;
+          img {
+             margin-top: 2rem;
+             margin-bottom: 0;
+          }
+       }
+       .nav-bar {
+          justify-content: space-evenly;
+          width: 100%;
+          a { 
+             font-size: 1.2rem;
+          }
+          a:hover {
+             font-size: 1.5rem;
+          } 
+       } 
+    }
+ 
+    #resume-section {
+       #resume-title {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          img {
+            margin-left: 0;
+            animation: resume-slidein 2s ease-out;
+          }
+       }
+
+        #resume-container {
+           #resume-viewer {
+              border-style: none;
+              margin-top: 0;
+              margin-bottom: 0;
+              iframe {
+                margin-top: 1rem;
+              }
+           }
+        }
+     }
+
+     @keyframes resume-slidein {
+        0% {
+            margin-left: -60rem;
+        }
+
+        100% {
+            margin-left: 0rem;
+        }
+    }
+ 
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .nav-bar {
+           width: 80%; 
+           h1:first-child {
+              display: none;
+           }
+ 
+           i {
+              display: none;
+           }
+        }
+        #contact {
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+        }    
+    }
+ }
+
+ @media only screen and (max-width: 700px) and (min-width: 400px) {
+    #header {
+       display: flex;
+       flex-direction: column;
+       height: 12rem;
+       width: 115%;
+       #header-name {
+          width: 60%;
+          img {
+             width: 25rem;
+             height: 4rem; 
+             margin-top: 2rem;
+             margin-bottom: 0;
+          }
+       }
+       .nav-bar {
+          justify-content: space-evenly;
+          width: 100%;
+          a { 
+             font-size: 1.2rem;
+          }
+          a:hover {
+             font-size: 1.5rem;
+          } 
+       } 
+    }
+ 
+    #resume-section {
+       #resume-title {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          img {
+             margin-left: 0;
+             animation: resume-slidein 2s ease-out;
+          }
+       }
+ 
+       #resume-container {
+          #resume-viewer {
+             border-style: none;
+             margin-top: 0;
+             margin-bottom: 0;
+             iframe {
+                 display: none;
+             }
+
+             img {
+                 display: block;
+                 width: 25rem;
+             }
+          }
+       }
+    }
+ 
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .nav-bar {
+           width: 60%;
+           h1:first-child {
+              display: none;
+           }
+ 
+           i {
+              display: none;
+           }
+ 
+           #footer-nav-links {
+              font-size: 1.5rem;
+   
+              a:hover {
+                 font-size: 2rem;
+              }
+           }  
+        }
+        #contact {
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+        }    
+    }
+ }
+
+ @media only screen and (max-width: 400px) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        height: 12rem;
+        width: 115%;
+        #header-name {
+           width: 60%;
+           img {
+              width: 20rem;
+              height: 4rem; 
+              margin-top: 2rem;
+              margin-bottom: 0;
+           }
+        }
+        .nav-bar {
+           justify-content: space-evenly;
+           width: 100%;
+           a { 
+              font-size: 1rem;
+           }
+           a:hover {
+              font-size: 1.2rem;
+           } 
+        } 
+     }
+  
+     #resume-section {
+        #resume-title {
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           img {
+              width: 15rem;
+              height: 4rem;
+              margin-left: 0;
+              animation: resume-slidein 2s ease-out;
+           }
+        }
+  
+        #resume-container {
+           #resume-viewer {
+              border-style: none;
+              margin-top: 0;
+              margin-bottom: 0;
+              iframe {
+                  display: none;
+              }
+ 
+              img {
+                  display: block;
+                  width: 18rem;
+              }
+           }
+        }
+     }
+  
+     @keyframes project-slidein {
+        0% {
+            margin-left: -20rem;
+        }
+    
+        100% {
+            margin-left: 0rem;
+        }
+     }
+  
+  
+     #footer {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         .nav-bar {
+            width: 80%;
+            h1:first-child {
+               display: none;
+            }
+  
+            i {
+               display: none;
+            }
+  
+            #footer-nav-links {
+               font-size: 1.2rem;
+               a:hover {
+                  font-size: 1.5rem;
+               }
+            }  
+         }
+         #contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            #contact-photo {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                img {
+                   width: 15rem;
+                   height: 16rem;
+                   margin: 0;
+                   margin-top: 2rem;
+                }
+            }
+            #contact-links {
+                margin-bottom: 3rem;
+            }
+         }    
+     }
+ }
