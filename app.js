@@ -1,6 +1,11 @@
 const context = {
     blogs: [
-        
+        {
+           title: "Building my Portfolio Page using the Handlebars JavaScript Library",
+           url: "https://medium.com/@etgreer91/templating-with-handlebars-javascript-library-faffd83626b5",
+           photo_src: "./photos/handlebars.png" 
+
+        },
         {
             title: "The Problem Solving Process Using Mocha Testing",
             url: "https://medium.com/@etgreer91/the-problem-solving-process-using-mocha-testing-ac829f63b108",
@@ -15,11 +20,6 @@ const context = {
             title: "Rave Mom: My Love Letter to Raving Culture",
             url: "https://medium.com/@etgreer91/rave-mom-my-love-letter-to-raving-culture-1ccd2a9524f2",
             photo_src: "./photos/rave_mom_blog.png"
-        },
-        {
-            title: "Tackling the Astronomical: my First Hack-a-thon Experience",
-            url: "https://medium.com/@etgreer91/tackling-the-astronomical-my-first-hack-a-thon-experience-3d72243fbbee",
-            photo_src: "./photos/astronomical_blog.jpeg"
         }
     ]
 }
