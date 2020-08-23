@@ -2,7 +2,7 @@ const context = {
     blogs: [
         {
            title: "The Main Principles of Object Oriented Programming",
-           url: "https://medium.com/@etgreer91/templating-with-handlebars-javascript-library-faffd83626b5",
+           url: "https://medium.com/@etgreer91/the-main-principles-of-object-oriented-programming-45506517865d",
            photo_src: "./photos/ben-ashby-TAqEFzBEKbY-unsplash.jpg" 
         },
         {
