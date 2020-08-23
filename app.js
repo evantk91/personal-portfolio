@@ -3,7 +3,7 @@ const context = {
         {
            title: "The Main Principles of Object Oriented Programming",
            url: "https://medium.com/@etgreer91/templating-with-handlebars-javascript-library-faffd83626b5",
-           photo_src: "./photos/ben-ashby-TAqEFzBEKbY-unsplash.png" 
+           photo_src: "./photos/ben-ashby-TAqEFzBEKbY-unsplash.jpg" 
         },
         {
             title: "Implementing Authorization in Ruby on Rails",
