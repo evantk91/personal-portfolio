@@ -18,6 +18,12 @@
                 <h2>Technology Stack:</h2>
                 <p>Technology Stack: {{this.tech}}</p>
                 {{#if this.private}}
+                {{#if this.deployed}}
+                <div id="project-links">
+                    <a href={{this.deployed_url}} target=_blank><i class="fas fa-globe"></i></a>
+                </div>
+                {{else}}
+                {{/if}}
                 {{else}}
                 {{#if this.deployed}}
                 <div id="project-links">

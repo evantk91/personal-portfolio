@@ -2,14 +2,16 @@ const context = {
     projects: [
         {
             title: "Maripilot Website",
-            description: "Full stack web application for Maripilot, a startup based out of Boise, Idaho. The user interface allows for users in the aquaculture sector to use a business planning tool and a forum to connect with other users using various channels. The user interface is built in React and the backend is written in Ruby on Rails. The user information and messages are stored in a PostgreSQL relational database. JWT authentication is used for user login. An administration login is created for the moderation and management of the messaging board.",
+            description: "Full stack web application for MariPilot, a startup based in Boise, Idaho. MariPilot participated in the 2020 Boise Startup Week. I serve as a lead engineer on the software development team. My team developed the user interface that hosts a business planning tool developed by the founder and his advisors and a custom forum connecting players in the aquaculture industry. The user interface is built in React and the backend is written in Ruby on Rails. The user login uses JWT authentication. The user information and messages are stored in a PostgreSQL relational database. We created admin privileges allowing for the moderation and management of the forum by the founder and his advisors.",
             tech: "React, Ruby on Rails",
             project_photo: "./photos/Maripilot_Logo.png",
+            deployed: true,
+            deployed_url: "https://maripilot.com/",
             private: true
         },
         {
             title: "Rave Mom",
-            description: "Personalized browser based game built in the Phaser 3 JavaScript library. Rave Mom is a one player survival game with a scoring system that is a variation on the classic Bomberman game. The back end is written in Ruby on Rails. The user's information and scores are stored in a PostgreSQL relational database. JWT authentication is used for the user login. The game is deployed on Google Firebase and Heroku.",
+            description: "Personalized browser based game built in the Phaser 3 JavaScript library. I developed Rave Mom for my capstone project at the Flatiron School Denver. I took inspiration from my love of music festivals and the classic Bomberman game. I learned the Phaser 3 library over the course of a week before building the game in two weeks. I wrote the backend in Ruby on Rails. User information and scores are stored in a PostgreSQL relational database. I used JWT authentication is used for the user login. The game is deployed on Google Firebase and Heroku.",
             tech: "Phaser 3, JavaScript, Ruby on Rails, Heroku, Google Firebase",
             project_photo: "./photos/Rave_Mom_Screenshot.png",
             demo_url: "https://www.youtube.com/watch?v=3kBx_M08VB8&t=17s",
