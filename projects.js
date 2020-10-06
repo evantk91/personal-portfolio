@@ -2,7 +2,7 @@ const context = {
     projects: [
         {
             title: "Maripilot Website",
-            description: "Full stack web application for the Maripilot Company. The user interface allows for users to use a business planning tool and a messaging board to connect with other users. The user interface is built in React and the backend is written in Ruby on Rails. The user information and messages are stored in a PostgreSQL relational database. JWT authentication is used for user login. An administration login is created for the moderation and management of the messaging board.",
+            description: "Full stack web application for Maripilot, a startup based out of Boise, Idaho. The user interface allows for users in the aquaculture sector to use a business planning tool and a forum to connect with other users using various channels. The user interface is built in React and the backend is written in Ruby on Rails. The user information and messages are stored in a PostgreSQL relational database. JWT authentication is used for user login. An administration login is created for the moderation and management of the messaging board.",
             tech: "React, Ruby on Rails",
             project_photo: "./photos/Maripilot_Logo.png",
             private: true
