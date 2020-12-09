@@ -2,18 +2,19 @@ const context = {
     projects: [
         {
             title: "Bonsai Tree Marketplace",
-            description: "Full stack e-commerce web application for a client's bonsai Tree selling business based out of Honolulu, Hawaii",
+            description: "Full stack e-commerce web application for a client's bonsai Tree selling business based out of Honolulu, Hawaii. The user interface is built in React and the back-end is written in Express.js. A content management system is going to be integrated.",
             tech: "React, Express.js",
             project_photo: "./photos/2_Bonsai_-_Delosperma_cooperi_formal_upright.jpg",
             github_url: "https://github.com/evantk91/bonsai-shop-api",
             deployed: false,
+            demoed: false,
             private: false
         },
         {
             title: "Maripilot Website",
             description: "Full stack web application for MariPilot, a startup based in Boise, Idaho. MariPilot participated in the 2020 Boise Startup Week. I served as a lead engineer on the software development team. My team developed the user interface that hosts a business planning tool developed by the founder and his advisors and a custom forum connecting players in the aquaculture industry. The user interface is built in React and the backend is written in Ruby on Rails. The user login uses JWT authentication. The user information and messages are stored in a PostgreSQL relational database. We created admin privileges allowing for the moderation and management of the forum by the founder and his advisors.",
             tech: "React, Ruby on Rails",
-            project_photo: "./photos/Maripilot_Logo.png",
+            project_photo: "./photos/maripilot-shrimp-bowl.jpg",
             deployed: false,
             private: true
         },
@@ -25,6 +26,7 @@ const context = {
             demo_url: "https://www.youtube.com/watch?v=3kBx_M08VB8&t=17s",
             github_url: "https://github.com/evantk91/rave-mom-app",
             deployed: true,
+            demoed: true,
             deployed_url: "https://rave-mom.firebaseapp.com/",
             private: false
         },
@@ -36,6 +38,7 @@ const context = {
             demo_url: "https://www.youtube.com/watch?v=T3Eti6dAlXk&t=6s",
             github_url: "https://github.com/evantk91/three-card-poker-frontend",
             deployed: false,
+            demoed: true,
             private: false
         }
     ]
