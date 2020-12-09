@@ -1,12 +1,20 @@
 const context = {
     projects: [
         {
+            title: "Bonsai Tree Marketplace",
+            description: "Full stack e-commerce web application for a client's bonsai Tree selling business based out of Honolulu, Hawaii",
+            tech: "React, Express.js",
+            project_photo: "./photos/2 Bonsai - Delosperma cooperi formal upright.jpg",
+            github_url: "https://github.com/evantk91/bonsai-shop-api",
+            deployed: false,
+            private: false
+        },
+        {
             title: "Maripilot Website",
-            description: "Full stack web application for MariPilot, a startup based in Boise, Idaho. MariPilot participated in the 2020 Boise Startup Week. I serve as a lead engineer on the software development team. My team developed the user interface that hosts a business planning tool developed by the founder and his advisors and a custom forum connecting players in the aquaculture industry. The user interface is built in React and the backend is written in Ruby on Rails. The user login uses JWT authentication. The user information and messages are stored in a PostgreSQL relational database. We created admin privileges allowing for the moderation and management of the forum by the founder and his advisors.",
+            description: "Full stack web application for MariPilot, a startup based in Boise, Idaho. MariPilot participated in the 2020 Boise Startup Week. I served as a lead engineer on the software development team. My team developed the user interface that hosts a business planning tool developed by the founder and his advisors and a custom forum connecting players in the aquaculture industry. The user interface is built in React and the backend is written in Ruby on Rails. The user login uses JWT authentication. The user information and messages are stored in a PostgreSQL relational database. We created admin privileges allowing for the moderation and management of the forum by the founder and his advisors.",
             tech: "React, Ruby on Rails",
             project_photo: "./photos/Maripilot_Logo.png",
-            deployed: true,
-            deployed_url: "https://maripilot.com/",
+            deployed: false,
             private: true
         },
         {
