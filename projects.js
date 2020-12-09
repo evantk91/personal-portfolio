@@ -4,7 +4,7 @@ const context = {
             title: "Bonsai Tree Marketplace",
             description: "Full stack e-commerce web application for a client's bonsai Tree selling business based out of Honolulu, Hawaii",
             tech: "React, Express.js",
-            project_photo: "./photos/2 Bonsai - Delosperma cooperi formal upright.jpg",
+            project_photo: "./photos/2_Bonsai_-_Delosperma_cooper_formal_upright.jpg",
             github_url: "https://github.com/evantk91/bonsai-shop-api",
             deployed: false,
             private: false
